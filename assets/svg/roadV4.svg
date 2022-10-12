@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 477.9 1796.1" style="enable-background:new 0 0 477.9 1796.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#353535;stroke-width:99;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:14;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:14;stroke-miterlimit:10;stroke-dasharray:59.1591,39.4394;}
+	.st3{fill:#2F2E41;}
+	.st4{fill:#FFFFFF;stroke:#2F2E41;stroke-width:5;stroke-miterlimit:10;}
+	.st5{font-family:'BasicSans-Regular';}
+	.st6{font-size:26.1962px;}
+	.st7{fill:#632EFF;}
+	.st8{fill:#24D600;}
+	.st9{fill:#F60076;}
+	.st10{fill:#FFE056;}
+	.st11{fill:#D90DFF;}
+</style>
+<g id="road">
+	<path class="st0" d="M87.7,0.7c-0.5,51-8.7,112.6,10.1,142.5l65.2,86.1c14.5,19.1,22.3,42.4,22.3,66.4v42.8
+		c0,51.4-22.4,100.2-61.3,133.7l0,0c-25.5,21.9-46,59.3-46,92.9L78,656.6c0,26,10.5,50.9,29,69l78.5,71.1c16,14.5,25.5,35,26.1,56.6
+		l8.9,302.3c0.8,27.1-10.4,75.7-26,109.1c-6.6,14.1-16.5,26.4-28.8,35.9l-42.1,32.5c-24.3,18.7-39.1,47.3-39.6,78c0,0.6,0,1.3,0,1.9
+		v64.6c0,55,19.4,108.2,54.8,150.3l9.2,10.9c34.8,41.4,51.3,95.2,45.6,149.1l0,0"/>
+	<g>
+		<g>
+			<path class="st1" d="M87.6,0.6c-0.1,9.7-0.5,19.8-0.9,30"/>
+			<path class="st2" d="M85.5,70c-0.3,29.4,1.7,56.3,12.3,73.1l65.2,86.1c14.5,19.1,22.3,42.4,22.3,66.4v42.8
+				c0,51.4-22.4,100.2-61.3,133.7l0,0C98.5,494,78,531.4,78,565l-0.1,91.5c0,26,10.5,50.9,29,69l78.5,71.1
+				c16,14.5,25.5,35,26.1,56.6l8.9,302.3c0.8,27.1-10.4,75.7-26,109.1c-6.6,14.1-16.5,26.4-28.8,35.9l-42.1,32.5
+				c-24.3,18.7-39.1,47.3-39.6,78c0,0.6,0,1.3,0,1.9v64.6c0,55,19.4,108.2,54.8,150.3l9.2,10.9c24,28.6,39.3,63.1,44.6,99.5"/>
+			<path class="st1" d="M194.3,1757.8c0.5,9.9,0.2,19.9-0.9,30v0"/>
+		</g>
+	</g>
+</g>
+<g id="signs">
+	<g>
+		<path class="st3" d="M190.4,189.1h-8.1V80.4c0-0.6,8.1-0.6,8.1,0V189.1z"/>
+		<polygon points="190.4,172.3 182.3,173.9 182.3,162.7 190.4,162.7 		"/>
+		<path class="st4" d="M229.5,138.6h-85.1c-13.6,0-24.6-11-24.6-24.6v0c0-13.6,11-24.6,24.6-24.6h85.1c13.6,0,24.6,11,24.6,24.6v0
+			C254.1,127.5,243.1,138.6,229.5,138.6z"/>
+	</g>
+	<g>
+		<path class="st3" d="M237.1,538.3H229V429.6c0-0.6,8.1-0.6,8.1,0V538.3z"/>
+		<polygon points="237.1,521.5 229,523.1 229,511.9 237.1,511.9 		"/>
+		<path class="st4" d="M276.2,487.7h-85.1c-13.6,0-24.6-11-24.6-24.6v0c0-13.6,11-24.6,24.6-24.6h85.1c13.6,0,24.6,11,24.6,24.6v0
+			C300.8,476.7,289.8,487.7,276.2,487.7z"/>
+	</g>
+	<g>
+		<path class="st3" d="M304.2,901.4h-8.1V792.6c0-0.6,8.1-0.6,8.1,0V901.4z"/>
+		<polygon points="304.2,884.6 296.1,886.2 296.1,875 304.2,875 		"/>
+		<path class="st4" d="M343.3,850.8h-85.1c-13.6,0-24.6-11-24.6-24.6v0c0-13.6,11-24.6,24.6-24.6h85.1c13.6,0,24.6,11,24.6,24.6v0
+			C367.9,839.8,356.9,850.8,343.3,850.8z"/>
+	</g>
+	<g>
+		<path class="st3" d="M304.2,1279.5h-8.1v-108.8c0-0.6,8.1-0.6,8.1,0V1279.5z"/>
+		<polygon points="304.2,1262.7 296.1,1264.3 296.1,1253.1 304.2,1253.1 		"/>
+		<path class="st4" d="M343.3,1229h-85.1c-13.6,0-24.6-11-24.6-24.6v0c0-13.6,11-24.6,24.6-24.6h85.1c13.6,0,24.6,11,24.6,24.6v0
+			C367.9,1217.9,356.9,1229,343.3,1229z"/>
+	</g>
+	<g>
+		<path class="st3" d="M223.3,1657.6h-8.1v-108.8c0-0.6,8.1-0.6,8.1,0V1657.6z"/>
+		<polygon points="223.3,1640.7 215.3,1642.4 215.3,1631.2 223.3,1631.2 		"/>
+		<path class="st4" d="M262.5,1607h-85.1c-13.6,0-24.6-11-24.6-24.6v0c0-13.6,11-24.6,24.6-24.6h85.1c13.6,0,24.6,11,24.6,24.6v0
+			C287,1596,276,1607,262.5,1607z"/>
+	</g>
+</g>
+<g id="sign_x5F_text">
+	<text transform="matrix(1 0 0 1 157.0477 120.1838)" class="st5 st6">Prep</text>
+	<text transform="matrix(1 0 0 1 185.3211 470.7673)" class="st5 st6">Drug ID</text>
+	<text transform="matrix(1 0 0 1 240.4715 834.7473)" class="st5 st6">Preclinical</text>
+	<text transform="matrix(1 0 0 1 257.5252 1211.8572)" class="st5 st6">Clinical</text>
+	<text transform="matrix(1 0 0 1 164.2352 1591.5798)" class="st5 st6">Outcome</text>
+</g>
+<g id="Layer_5">
+	<circle class="st7" cx="295.9" cy="52.6" r="29"/>
+	<circle class="st7" cx="324.9" cy="142.7" r="29"/>
+	<circle class="st7" cx="295.9" cy="237.8" r="29"/>
+	<circle class="st8" cx="362.1" cy="401.9" r="29"/>
+	<circle class="st8" cx="385.5" cy="487.9" r="29"/>
+	<circle class="st8" cx="362.1" cy="573.8" r="29"/>
+	<circle class="st9" cx="406.2" cy="753.5" r="29"/>
+	<circle class="st9" cx="443.4" cy="846.8" r="29"/>
+	<circle class="st9" cx="406.2" cy="936.9" r="29"/>
+	<circle class="st10" cx="420" cy="1126.2" r="29"/>
+	<circle class="st10" cx="449" cy="1212.2" r="29"/>
+	<circle class="st10" cx="406.2" cy="1299.9" r="29"/>
+	<circle class="st11" cx="348.3" cy="1505.8" r="29"/>
+	<circle class="st11" cx="377.3" cy="1591.8" r="29"/>
+	<circle class="st11" cx="338.7" cy="1677.7" r="29"/>
+</g>
+</svg>

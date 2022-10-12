@@ -1,0 +1,62 @@
+.Container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+  }
+  
+  section {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  footer {
+    background: #d4e5f6;
+  }
+  
+  .au-left,
+  .au-right {
+    flex: 1;
+  }
+  
+  .au-right {
+    height: 100%;
+    overflow: scroll;
+    background: #adadad;
+  }
+  
+  .au-left {
+    background: #a1b2c3;
+  }
+
+
+  /* STAGES */
+
+  .stage1 .btn-white {
+    background-color: white !important;
+  }
+
+  .stage2 .btn-white {
+    background-color: white !important;
+  }
+
+  .stage3 .btn-white {
+    background-color: white !important;
+  }
+
+  .stage4 .btn-white {
+    background-color: white !important;
+  }
+
+  .stage5 .btn-white {
+    background-color: white !important;
+  }
+
+.stage h1 {
+    font-size: 14px !important;
+}
+
+.accordion-collapse {
+    min-height: 50vh !important;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 813.1 3000" style="enable-background:new 0 0 813.1 3000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#4C4C4C;stroke-width:44;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#4C4C4C;stroke-width:11;stroke-miterlimit:10;stroke-dasharray:12;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;stroke-dasharray:30,20;}
+</style>
+<g id="road">
+	<path class="st0" d="M200.8,0v613.4c0,66.7,54.2,120.9,120.9,120.9h43.3c60.9,0,110.4,49.4,110.4,110.4V1182
+		c0,69.6-56.4,126-126,126H202.5c-59.1,0-107,47.9-107,107v371.5c0,68.2,55.2,123.4,123.4,123.4h86.4c62.3,0,112.5,50.8,111.8,113.1
+		l-5.7,449.4"/>
+	<circle class="st0" cx="405.7" cy="2672.2" r="182"/>
+	<line class="st0" x1="1.6" y1="2672.2" x2="223.7" y2="2672.2"/>
+	<line class="st0" x1="405.7" y1="2878" x2="405.7" y2="2998.4"/>
+	<line class="st0" x1="591" y1="2672.2" x2="813.1" y2="2672.2"/>
+	<path class="st1" d="M37,214.6"/>
+</g>
+<g id="dots">
+	<path class="st2" d="M199.2,1.6v613.6c0,66.7,54.2,120.9,120.9,120.9h43.3c60.9,0,110.4,49.4,110.4,110.4v337.4
+		c0,69.6-56.4,126-126,126H201c-59.1,0-107,47.9-107,107v371.3c0,68.2,55.2,123.4,123.4,123.4h86.4c62.3,0,112.5,50.8,111.8,113.1
+		l-5.7,449.4"/>
+	<circle class="st2" cx="404.1" cy="2674" r="182"/>
+	<line class="st2" x1="0" y1="2674" x2="222.1" y2="2674"/>
+	<line class="st2" x1="404.1" y1="2879.7" x2="404.1" y2="3000"/>
+	<line class="st2" x1="589.4" y1="2674" x2="811.6" y2="2674"/>
+	<path class="st2" d="M35.6,216.4"/>
+</g>
+<g id="Layer_3">
+</g>
+</svg>

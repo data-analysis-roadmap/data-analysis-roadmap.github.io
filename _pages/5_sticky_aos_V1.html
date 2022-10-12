@@ -1,0 +1,365 @@
+---
+title: "5_sticky_aos_V1"
+layout: default
+permalink: "/5_sticky_aos_V1.html"
+---
+
+<style>
+
+
+
+.ebook {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ebook__cover {
+    position: sticky;
+    top: 0;
+    flex-grow: 1;
+    height: 50vh;
+    min-height: 400px;
+    width: 100%;
+}
+@media (min-width: 652px) {
+    .ebook__cover {
+        height: 100vh;
+        width: 38%;
+   }
+}
+@media (min-width: 768px) {
+    .ebook__cover {
+        width: 42%;
+   }
+}
+@media (min-width: 992px) {
+    .ebook__cover {
+        width: 46%;
+   }
+}
+.ebook__body {
+    flex-grow: 1;
+    width: 50%;
+    background: white;
+    position: relative;
+}
+.ebook__lead {
+    grid-column-start: 2;
+    grid-column-end: 10;
+}
+.ebook__content {
+    width: 100%;
+    padding: 10% 0;
+    line-height: 1.55;
+    border-bottom: 1px solid #eef0f1;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+}
+.ebook__content p {
+    margin: 0 0 1.5em;
+    grid-column-start: 2;
+    grid-column-end: 10;
+}
+.ebook__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.ebook__header {
+    position: absolute;
+}
+@media (min-width: 552px) {
+    .ebook__header {
+        padding: 3rem;
+   }
+}
+@media (min-width: 768px) {
+    .ebook__header {
+        padding: 3rem 4rem;
+   }
+}
+@media (min-width: 992px) {
+    .ebook__header {
+        padding: 3rem 6rem;
+   }
+}
+.ebook__eyebrow {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 0.35em;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.ebook__title {
+    color: #fff;
+    line-height: 1.3;
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .ebook__title {
+        font-size: 3.8rem;
+   }
+}
+.ebook__subtitle {
+    color: #fff;
+    margin-top: 0.65em;
+    line-height: 1.5;
+    width: 100%;
+}
+@media (min-width: 768px) {
+.ebook__media {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em 0;
+    grid-column-start: 1;
+    grid-column-end: 11;
+}
+.ebook__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 2rem;
+    border-bottom: 1px solid #eef0f1;
+}
+@media (min-width: 552px) {
+    .ebook__navigation {
+        padding: 3rem;
+   }
+}
+@media (min-width: 768px) {
+    .ebook__navigation {
+        padding: 3rem 4rem;
+   }
+}
+.ebook__navlink {
+    text-decoration: none;
+}
+.ebook__navlink--current {
+    order: 2;
+    color: #b3bac2;
+    margin: 2rem 0 0;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 1200px) {
+    .ebook__navlink--current {
+        margin: 0 1rem;
+        width: auto;
+        order: 1;
+   }
+}
+.ebook__navlink--previous {
+    order: 0;
+}
+.ebook__navlink--next {
+    order: 1;
+    text-align: right;
+}
+@media (min-width: 1200px) {
+    .ebook__navlink--next {
+        order: 2;
+   }
+}
+.ebook__chapter {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    color: #a5aeb6;
+}
+.ebook__navtitle {
+    display: inline-block;
+    margin-top: 0.35em;
+    color: #444d55;
+}
+
+.ebook, body {
+    max-width: 99vw!important;
+}
+
+}
+img {
+    max-width: 95vw!important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: 'Work Sans', sans-serif !important;
+
+}
+
+h1 {
+  font-weight: 600 !important;
+}
+
+h2 {
+  font-weight: 300 !important;
+}
+
+
+
+
+
+#motionP {
+  fill: none;
+  stroke: black;
+  stroke-width: 100;
+}
+
+.st10 {
+  fill: deeppink;
+
+}
+
+.st11 {
+  fill: pink;
+
+}
+
+.st12 {
+  fill: lightgreen;
+
+}
+
+.st13 {
+  fill: mediumseagreen;
+
+}
+
+.st14 {
+  fill: green;
+
+}
+
+.st0 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 101;
+  stroke-miterlimit: 10;
+}
+
+.st0 {
+  fill: #2CABAC;
+  stroke: #2CABAC;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st1 {
+  fill: #ACDEE0;
+  stroke: #ACDEE0;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st2 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.st3 {
+  fill: none;
+  stroke: #452257;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+</style>
+
+
+<div>
+
+    <section class="ebook" id="">
+        <header class="ebook__cover" id = "cover">
+
+            <div id="wrap">
+        <div class="road_path">
+
+            <svg id="cover">
+                <path id="motionP cover" class="st0" d="M329.8,41.5C107.7,195.7,7.8,427.3,70.9,591.7C119.8,719.2,259.9,789,268.5,793.1
+                                c149.4,72.2,234.3-2,322.7,61.3c130.2,93.2,150,400.3,20.4,514.7c-133.3,117.7-349.6-34.6-486.1,102.1
+                                c-53.6,53.7-87.1,144.1-71,223.5c46,226.7,468.6,207.7,506.6,400.3c30.3,153.8-213.2,227-379.9,620.9
+                                c-56.7,134.1-100.9,242.4-69.4,363.6c67.1,258.7,420.1,351.2,469.8,363.6"/>
+
+                <g id="point">
+                    <path class="st0" d="M21.3,46.7C3.9,55.5-3,76.6,5.8,93.9s29.9,24.2,47.2,15.4l38.5-19.5L59.8,27.2L21.3,46.7z"/>
+                    <path class="st1" d="M148.1,21.8L148.1,21.8C139.1,4,117.4-3.1,99.6,5.9l-39.5,20l32.6,64.3l39.5-20
+                                C150,61.2,157.1,39.5,148.1,21.8C148.1,21.8,148.1,21.8,148.1,21.8z"/>
+                    <line class="st2" x1="32.2" y1="81.2" x2="50.6" y2="72.6"/>
+                    <path class="st3" d="M100.6,44.4c8-2.9,15.7-6.3,23.3-10.1"/>
+                    <path class="st3" d="M117.3,51c-3-8-6.3-15.8-10.1-23.3"/>
+                </g>
+
+                
+                <g id="buttonGroup">
+                    <g id=" svgButton" type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <circle class="st10" cx="220.7" cy="425.9" r="29.7"/>
+
+                    </g>
+                    <g id=" svgButton" type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+
+                        <circle class="st11" cx="350" cy="425.9" r="29.7"/>
+                    </g>
+                    <g id=" svgButton" type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <circle class="st12" cx="550" cy="1127.8" r="29.7"/>
+                    </g>
+                    <g id=" svgButton" type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        <circle class="st13" cx="430.7" cy="1127.8" r="29.7"/>
+                    </g>
+                    <g id=" svgButton" type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        <circle class="st14" cx="320.1" cy="1127.8" r="29.7"/>
+                    </g>
+
+                </g>
+            </svg>
+        </div>
+    </div>
+
+            </header>
+        <div class="ebook__body">
+          <nav class="ebook__navigation" style = "height: 15vh;">
+            <img src="{{site.baseurl}}/assets/images/5_sticky_aos_V1/roadmap.svg" class="" style = "object-fit: contain; height: 10vh!important; width: 100vw !important;">
+          </nav>
+          <div class="ebook__content">
+            <div class="ebook__lead">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ad praesentium voluptatibus deleniti dicta debitis quas autem? Nihil sint molestias, facere libero nam aperiam molestiae alias, quos numquam tenetur repudiandae?</p>
+          </div>
+          
+          <p> Tenetur excepturi praesentium illum voluptatibus cum repellat consectetur eum dolor provident modi ad odit quo maxime aliquam harum vitae explicabo autem aspernatur ut, hic voluptas repudiandae incidunt commodi est. Aut nobis vero sapiente et deleniti quam mollitia quia nihil natus suscipit minima, sequi asperiores, earum reprehenderit quas consequatur ipsa officia numquam repellendus saepe similique.</p>
+          
+          <p>Distinctio, nobis. Labore ex, necessitatibus veritatis cumque commodi voluptate amet optio quaerat quos tenetur voluptatum nobis ratione deserunt consequatur, quis explicabo cum? Alias magni amet, iusto aperiam dolorem suscipit adipisci veniam minus quia, cumque, porro voluptatibus dignissimos nihil blanditiis incidunt quo molestias ipsum libero est ea. Distinctio, alias ex aperiam sed fuga quae architecto quasi assumenda soluta illum iusto, quod asperiores consectetur repudiandae quisquam in recusandae, possimus ipsum. </p>
+            
+            <img class="ebook__media" src="https://source.unsplash.com/St08jKkPVHw/800x500">
+          
+          <p>Molestiae possimus dolore magnam a corporis, quidem voluptates accusantium nam ea odit, placeat voluptatum consectetur, quibusdam suscipit delectus laborum quisquam. Quis ducimus quo nostrum expedita eligendi possimus consequuntur. Corporis fugit rem velit minus vitae modi quia quas possimus! Consequuntur incidunt quae quibusdam corrupti provident odio placeat enim sunt, nisi ab! Accusamus, magni minima dolorem ad, nam totam ipsa numquam esse unde doloremque corporis ex maxime error mollitia ducimus, deserunt beatae molestias commodi! Doloremque culpa est dolorem quo quae amet tempore et, nam iure a labore soluta quia ducimus repellendus magni rem in impedit debitis. Enim consequuntur eligendi commodi alias molestias sed unde totam aspernatur, atque cupiditate debitis qui nobis, sunt nam dolorum nemo, et ullam incidunt nesciunt itaque? Totam architecto soluta atque dolores recusandae aspernatur, repellat expedita voluptate dignissimos, repudiandae, esse repellendus consectetur numquam ex aperiam dolorum illo est. Error quia similique, quidem voluptatem alias assumenda quas harum, totam quam aliquid magni amet quae vitae. Earum, veniam nemo libero repellendus esse nulla qui dicta, velit error aperiam consectetur repudiandae deleniti illo explicabo consequatur similique, rem enim? </p>
+          
+          <p>Deserunt obcaecati necessitatibus similique neque optio ex distinctio, dolorum, veritatis atque sint cupiditate laboriosam perferendis architecto libero deleniti fugit! Omnis quam quasi deleniti facere eveniet enim, quidem laborum temporibus sit deserunt velit sed accusamus est modi natus eius ab pariatur ipsam fuga, magni tenetur dolor veniam. Corporis nobis sequi ex, vel excepturi facere qui cumque dolor alias esse sit deleniti porro in temporibus, natus recusandae similique neque, accusamus ducimus quia beatae nulla magnam quod? Praesentium modi expedita sint dolorem voluptatum vitae asperiores quaerat facilis tempore vero debitis, consectetur reprehenderit temporibus dolor. Ipsa impedit maxime temporibus. Minus asperiores illo, adipisci dignissimos ad animi voluptas alias dolore quaerat nesciunt ratione corrupti vero aliquid quasi aspernatur consequatur! Eaque ab reprehenderit magni, fugit itaque repellendus sapiente nulla, voluptate vitae enim sequi voluptatem? Amet maiores eius labore sint deleniti ipsa? Quaerat rem modi cumque nisi repellat laborum culpa tempora repellendus accusamus rerum! Est voluptates quisquam repellendus! Harum libero natus eveniet ab iusto blanditiis inventore quibusdam magni sapiente, sed consequuntur aspernatur ut doloremque, unde facilis expedita laborum quae!</p>
+          </div>
+        </div>
+      </section>
+      
+</div>
+
+
+<script>
+
+
+</script>
