@@ -1,0 +1,54 @@
+---
+title: "13_aos_V6"
+layout: default
+permalink: "/13_aos_V6.html"
+---
+
+
+<link href="{{site.baseurl}}/assets/css/13_aos_V6.css" rel="stylesheet" />
+
+<div class="split left">
+    <div class="centered">
+        <button class = "btn btn-primary my-3" onclick=home()>landing page</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view1()>View 1</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view2()>View 2</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view3()>View 3</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view4()>View 4</button> <br>
+
+
+
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div id="view0">
+        {% include /13_aos_V6/view0.html %}
+    </div>
+    <div id="view1" style = "display: none;">
+        {% include /13_aos_V6/view1.html %}
+    </div>
+
+    <div id="view2" style = "display: none;">
+        {% include /13_aos_V6/view2.html %}
+    </div>
+
+    <div id="view3" style = "display: none;">
+        {% include /13_aos_V6/view3.html %}
+    </div>
+
+    <div id="view4" style = "display: none;">
+        {% include /13_aos_V6/view4.html %}
+    </div>
+
+  </div>
+  
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="{{site.baseurl}}/assets/js/13_aos_V6.js"></script>
