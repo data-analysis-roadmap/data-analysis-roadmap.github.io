@@ -1,0 +1,68 @@
+
+
+<style>
+    *{
+    margin:0;
+    padding:0;
+}
+
+.first-section, .second-section, .third-section {
+    height:150vh; /* helpful */
+    display:flex; /* VERY IMPORTANT APPARENTLY */
+}
+
+
+.ingredient-images{
+    position: absolute; /* IMPORTANT APPARENTLY */
+    width:400px; /* IMPORTANT APPARENTLY */
+    top:420px; /* IMPORTANT APPARENTLY */
+}
+
+.section_1_01, .section_2_01, .section_3_01 {
+    position: absolute;
+    right:-400px;
+}
+.section_1_02, .section_2_02, .section_3_02 {
+    position: absolute;
+    right:-275px;
+
+}
+.section_1_03, .section_2_03, .section_3_03  {
+    position: absolute;
+    right:-150px;
+
+}
+.section_1_04, .section_2_04, .section_3_04 {
+    position: absolute;
+    right:-25px;
+
+}
+
+.road {
+    z-index: 1000 !important;
+}
+.images-wrapper {
+    z-index: 1 !important;
+}
+
+.road {
+    width: 300px;
+    height: 100vh !important;
+    position: fixed;
+  background-image: url("https://t3.ftcdn.net/jpg/00/67/32/42/360_F_67324202_9eSsx7EgHkDEnK0AGRkCvliSrd3DCL0C.jpg");
+  background-repeat: repeat;
+
+}
+
+.callout {
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.callout button {
+    font-size: 10px;
+    font-weight: bold;
+
+}
+</style>

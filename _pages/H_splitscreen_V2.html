@@ -1,0 +1,198 @@
+---
+title: "Split screen, V2"
+layout: default
+permalink: "/H_splitscreen_V2.html"
+status: "active"
+description: "Technically, 'Animate on scroll, V4 - split screen, highlights' is the first split-screen example. In this second verson, the roadmap on the left is kept undeveloped while various methods of displaying content are explored on the right. Unlike previous examples, the 'roadmap' on the left in this example would be completely fixed (no scrolling)."
+fname: "H_splitscreen_V2"
+---
+
+
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: 'Work Sans', sans-serif !important;
+    
+    }
+    
+
+
+    h1 {
+      font-weight: 600 !important;
+    }
+    
+    h2 {
+      font-weight: 300 !important;
+    }
+    
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: #eaeaea;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered svg {
+    height: 90vh;
+  }
+  
+  .roadmap_ania {
+    max-width: 40vw;
+  }
+</style>
+<div class="split left">
+    <div class="centered">
+        <button class = "btn btn-primary my-3" onclick=home()>landing page</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view1()>View 1</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view2()>View 2</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view3()>View 3</button> <br>
+        <button class = "btn btn-secondary btn-rounded my-3" onclick=view4()>View 4</button> <br>
+
+
+
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div id="view0">
+        {% include /13_aos_V6/view0.html %}
+    </div>
+    <div id="view1" style = "display: none;">
+        {% include /13_aos_V6/view1.html %}
+    </div>
+
+    <div id="view2" style = "display: none;">
+        {% include /13_aos_V6/view2.html %}
+    </div>
+
+    <div id="view3" style = "display: none;">
+        {% include /13_aos_V6/view3.html %}
+    </div>
+
+    <div id="view4" style = "display: none;">
+        {% include /13_aos_V6/view4.html %}
+    </div>
+
+  </div>
+  
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    
+
+function home() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+      view0.style.display = "block";
+      view1.style.display = "none";
+      view2.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+  }
+
+
+function view1() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+      view1.style.display = "block";
+      view0.style.display = "none";
+      view2.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+  }
+  
+
+function view2() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+      view2.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+  }
+  
+  function view2() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+      view2.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+  }
+  
+  function view3() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+      view3.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view2.style.display = "none";
+      view4.style.display = "none";
+  }
+  
+  
+  function view4() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+      view4.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view2.style.display = "none";
+      view3.style.display = "none";
+  }
+  
+</script>

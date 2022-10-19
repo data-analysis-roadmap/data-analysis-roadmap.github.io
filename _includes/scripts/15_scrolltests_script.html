@@ -1,0 +1,28 @@
+
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+
+  <script>
+    const reveal = gsap.utils.toArray('.reveal');
+reveal.forEach((text, i) => {
+  ScrollTrigger.create({
+    trigger: text,
+    toggleClass: 'active',
+    start: "top 90%",
+    end: "top 20%",
+    markers: true,
+  })
+})
+
+const images = gsap.utils.toArray('img');
+images.forEach((img, i) => {
+  ScrollTrigger.create({
+    trigger: img,
+    toggleClass: 'active',
+    start: "top 90%",
+    end: "top 20%",
+    markers: true,
+  })
+})
+  </script>

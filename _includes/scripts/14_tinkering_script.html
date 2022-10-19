@@ -1,0 +1,221 @@
+
+<script>
+    
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let controller = new ScrollMagic.Controller();
+        
+      let t1 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".first-section",
+            start: "top top",
+            end: '+=50000px',
+            //toggleActions: "play reverse play reverse",
+            markers: true,
+            scrub: true,
+            pin: true
+        }
+    })
+      
+            t1.from(".section_1_01", 500, {
+                x: -550,
+                
+                ease: Power1.easeOut
+            })
+            t1.from(".section_1_02", 500, {
+                x: -425,
+                
+                ease: Power1.easeOut
+            }, '-=4')
+            t1.from(".section_1_03", 500, {
+                x: -300,
+                ease: Power1.easeOut
+            }, '-=4')
+            t1.from(".section_1_04", 500, {
+                x: -175,
+                ease: Power1.easeOut
+            }, '-=4')
+            t1.to('#tween', 1000, {
+            })
+    
+    
+    
+            
+            t1.to(".section_1_01", 500, {
+                x: -550,
+                
+                ease: Power1.easeOut
+            })
+            t1.to(".section_1_02", 500, {
+                x: -425,
+                
+                ease: Power1.easeOut
+            }, '-=4')
+            t1.to(".section_1_03", 500, {
+                x: -300,
+                ease: Power1.easeOut
+            }, '-=4')
+            t1.to(".section_1_04", 500, {
+                x: -175,
+                ease: Power1.easeOut
+            }, '-=4')
+    
+    
+    
+            
+        let scene = new ScrollMagic.Scene({
+            triggerElement: '.first-section',
+            duration: '300%',
+            triggerHook: 0,
+            offset: '100'
+        })
+            .setTween(t1)
+            .setPin('.first-section', {pushFollowers: false})
+            .addTo(controller);
+    
+            
+
+
+
+
+
+    let t2 = gsap.timeline();
+    t2.from(".section_2_01", 500, {
+        x: -550,
+        
+        ease: Power1.easeOut
+    })
+    t2.from(".section_2_02", 500, {
+        x: -425,
+        
+        ease: Power1.easeOut
+    }, '-=4')
+    t2.from(".section_2_03", 500, {
+        x: -300,
+        ease: Power1.easeOut
+    }, '-=4')
+    t2.from(".section_2_04", 500, {
+        x: -175,
+        ease: Power1.easeOut
+    }, '-=4')
+    t2.to('#tween', 1000, {
+    })
+
+
+
+    
+    t2.to(".section_2_01", 500, {
+        x: -550,
+        
+        ease: Power1.easeOut
+    })
+    t2.to(".section_2_02", 500, {
+        x: -425,
+        
+        ease: Power1.easeOut
+    }, '-=4')
+    t2.to(".section_2_03", 500, {
+        x: -300,
+        ease: Power1.easeOut
+    }, '-=4')
+    t2.to(".section_2_04", 500, {
+        x: -175,
+        ease: Power1.easeOut
+    }, '-=4')
+
+
+
+    
+let scene2 = new ScrollMagic.Scene({
+    triggerElement: '.second-section',
+    duration: '300%',
+    triggerHook: 0,
+    offset: '100'
+})
+    .setTween(t2)
+    .setPin('.second-section', {pushFollowers: false})
+    .addTo(controller);
+
+    
+    
+    let t3 = gsap.timeline();
+    t3.from(".section_3_01", 500, {
+        x: -550,
+        
+        ease: Power1.easeOut
+    })
+    t3.from(".section_3_02", 500, {
+        x: -425,
+        
+        ease: Power1.easeOut
+    }, '-=4')
+    t3.from(".section_3_03", 500, {
+        x: -300,
+        ease: Power1.easeOut
+    }, '-=4')
+    t3.from(".section_3_04", 500, {
+        x: -175,
+        ease: Power1.easeOut
+    }, '-=4')
+    t3.to('#tween', 1000, {
+    })
+
+
+
+    
+    t3.to(".section_3_01", 500, {
+        x: -550,
+        
+        ease: Power1.easeOut
+    })
+    t3.to(".section_3_02", 500, {
+        x: -425,
+        
+        ease: Power1.easeOut
+    }, '-=4')
+    t3.to(".section_3_03", 500, {
+        x: -300,
+        ease: Power1.easeOut
+    }, '-=4')
+    t3.to(".section_3_04", 500, {
+        x: -175,
+        ease: Power1.easeOut
+    }, '-=4')
+
+
+
+    
+let scene3 = new ScrollMagic.Scene({
+    triggerElement: '.third-section',
+    duration: '300%',
+    triggerHook: 0,
+    offset: '100'
+})
+    .setTween(t3)
+    .setPin('.third-section', {pushFollowers: false})
+    .addTo(controller);
+
+    
+})
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
+    

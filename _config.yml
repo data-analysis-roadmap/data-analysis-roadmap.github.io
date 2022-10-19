@@ -1,4 +1,7 @@
 # Site
+name: 'ROADMAP'
+logo: 'assets/ROADMAP.png'
+favicon: 'assets/ROADMAP.ico'
 baseurl: '/data-analysis-roadmap.github.io'
 
 include: ["_pages"]
