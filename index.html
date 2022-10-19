@@ -34,7 +34,7 @@ p {
             {% if page.status == "active" %}        
             <div class="col">
               <div class="card shadow-sm border-dark   text-dark bg-light mb-3 h-100" style="max-width: 20rem;">
-                <a href = "{{site.baseurl}}{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
+                <a href = "{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
                 </a>
 
 
@@ -45,7 +45,7 @@ p {
                   <p class="card-text">
                     {{ page.description }}
                   </p>
-                  <a href = "{{site.baseurl}}{{ page.url }}" class = "py-2 px-2 btn-outline-secondary" target = "_blank">View →</a>
+                  <a href = "{{ page.url }}" class = "py-2 px-2 btn-outline-secondary" target = "_blank">View →</a>
 
                 </div>
                 <div class="card-footer">
@@ -65,7 +65,7 @@ p {
             {% if page.status == "archived" %}        
             <div class="col">
               <div class="card shadow-sm border-dark   text-dark bg-light mb-3 h-100" style="max-width: 20rem;">
-                <a href = "{{site.baseurl}}{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
+                <a href = "{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
                 </a>
 
                 <div class="card-body">
@@ -75,7 +75,7 @@ p {
                   <p class="card-text">
                     {{ page.description }}
                 </p>
-                <a href = "{{site.baseurl}}{{ page.url }}" class = "py-2 px-2 btn-outline-secondary" target = "_blank">View →</a>
+                <a href = "{{ page.url }}" class = "py-2 px-2 btn-outline-secondary" target = "_blank">View →</a>
 
                 </div>
                 <div class="card-footer">

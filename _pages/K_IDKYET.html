@@ -6,3 +6,234 @@ status: "active"
 description: "TBA."
 fname: "IDKYET"
 ---
+
+{% include /style/14_tinkering_style.html %}
+
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: 'Work Sans', sans-serif !important;
+    
+    }
+    
+
+
+    h1 {
+      font-weight: 600 !important;
+    }
+    
+    h2 {
+      font-weight: 300 !important;
+    }
+    
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: #eaeaea;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    text-align: center;
+
+  }
+.svgdiv {
+    height: 100%;
+        overflow: hidden;
+    object-fit: contain;
+    margin: 0;
+  }
+  .roadmap_ania {
+    max-width: 40vw;
+  }
+</style>
+<div class="split left" scroll="no" style="overflow: hidden">
+    
+    <div class="centered">
+        <button class = "btn btn-primary my-3" onclick=home()>landing page</button> <br>
+    </div>
+    <div class = "svgdiv">
+    {% include /svg/subwaymap.html %}
+</div>
+  </div>
+  
+  <div class="split right">
+    <div id="view0">
+        {% include /13_aos_V6/view0.html %}
+    </div>
+    <div id="view1" style = "display: none;">
+        {% include /13_aos_V6/view1.html %}
+    </div>
+
+    <div id="view2" style = "display: none;">
+        {% include /13_aos_V6/view2.html %}
+    </div>
+
+    <div id="view3" style = "display: none;">
+        {% include /13_aos_V6/view3.html %}
+    </div>
+
+    <div id="view4" style = "display: none;">
+        {% include /13_aos_V6/view4.html %}
+    </div>
+
+    <div id="view5" style = "display: none;">
+        {% include /13_aos_V6/view5.html %}
+    </div>
+
+
+  </div>
+  
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    
+
+function home() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+    var view5 = document.getElementById("view5");
+
+      view0.style.display = "block";
+      view1.style.display = "none";
+      view2.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+      view5.style.display = "none";
+
+  }
+
+
+function view1() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+    var view5 = document.getElementById("view5");
+
+      view1.style.display = "block";
+      view0.style.display = "none";
+      view2.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+      view5.style.display = "none";
+
+  }
+  
+
+function view2() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+    var view5 = document.getElementById("view5");
+
+      view2.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+      view5.style.display = "none";
+
+  
+    }
+  
+  function view2() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+    var view5 = document.getElementById("view5");
+
+      view2.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+      view5.style.display = "none";
+
+  }
+  
+  function view3() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+    var view5 = document.getElementById("view5");
+
+      view3.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view2.style.display = "none";
+      view4.style.display = "none";
+      view5.style.display = "none";
+
+  }
+  
+  
+  function view4() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+    var view5 = document.getElementById("view5");
+
+      view4.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view2.style.display = "none";
+      view3.style.display = "none";
+      view5.style.display = "none";
+
+  }
+    
+  function view5() {
+    var view0 = document.getElementById("view0");
+    var view1 = document.getElementById("view1");
+    var view2 = document.getElementById("view2");
+    var view3 = document.getElementById("view3");
+    var view4 = document.getElementById("view4");
+    var view5 = document.getElementById("view5");
+
+    view5.style.display = "block";
+      view0.style.display = "none";
+      view1.style.display = "none";
+      view2.style.display = "none";
+      view3.style.display = "none";
+      view4.style.display = "none";
+
+  }
+  
+</script>
+
+
+{% include /scripts/14_tinkering_script.html %}
+
