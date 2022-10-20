@@ -1,0 +1,108 @@
+---
+title: "Subway model, V1"
+layout: default
+permalink: "/K_subway_model_V1.html"
+status: "active"
+description: "TBA."
+fname: "K_subway_model_V1"
+---
+
+{% include /subway_model/style.html %}
+
+<div class="split left" scroll="no" style="overflow: hidden">
+    <div class="centered">
+      
+        <div class="maindiv">
+            <ul id="train_stop_0" style="list-style: none !important;" onclick="home()" onmouseover="home()" class="">
+                <li class="train_stop_dot_wrapper" style="list-style: none !important;"></li>
+                <li id="train_stop_text_0">
+                    <p>Home</p>
+                </li>
+            </ul>
+            <div
+                class="main_line">
+                <!-- START PILL -->
+                <div id="pill_container">
+                    <div id="main_pill"></div>
+                </div>
+                <!-- END PILL -->
+                <!-- SUBWAY STOP 1 -->
+                    <ul id="train_stop_1" onclick="view1()" onmouseover="view1()" class=""> <li class="train_stop_dot_wrapper">
+                        <div id="train_stop_dot_1" class="train_stop_dot"></div>
+                    </li>
+                    <li id="train_stop_text_1">
+                        <p>Identification</p>
+                    </li>
+                </ul>
+                <!-- SUBWAY STOP 2 -->
+                <ul id="train_stop_2" onclick="view2()" onmouseover="view2()">
+                    <li class="train_stop_dot_wrapper">
+                        <div id="train_stop_dot_2" class="train_stop_dot"></div>
+                    </li>
+                    <li id="train_stop_text_2">
+                        <p>Validation</p>
+                    </li>
+                </ul>
+                <!-- END SUBWAY STOP 2 -->
+                <!-- SUBWAY STOP 3 -->
+                <ul id="train_stop_3" onclick="view3()" onmouseover="view3()">
+                    <li class="train_stop_dot_wrapper">
+                        <div id="train_stop_dot_3" class="train_stop_dot"></div>
+                    </li>
+                    <li id="train_stop_text_3">
+                        <p>Clinical</p>
+                    </li>
+                </ul>
+                <!-- END SUBWAY STOP 3 -->
+                <!-- SUBWAY STOP 4 -->
+                <ul id="train_stop_4" onclick="view4()" onmouseover="view4()">
+                    <li class="train_stop_dot_wrapper">
+                        <div id="train_stop_dot_4" class="train_stop_dot"></div>
+                    </li>
+                    <li id="train_stop_text_4">
+                        <p>Outcome</p>
+                    </li>
+                </ul>
+                <!-- END SUBWAY STOP 4 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="split right">
+
+    <div id="view0" class = "">
+        {% include /split_panels_right/view0.html %}
+    </div>
+
+    <div id="view1" style="display: none;">
+        {% include /split_panels_right/view1.html %}
+    </div>
+
+    <div id="view2" style="display: none;">
+        {% include /split_panels_right/view2.html %}
+    </div>
+
+    <div id="view3" style="display: none;">
+        {% include /split_panels_right/view3.html %}
+    </div>
+
+    <div id="view4" style="display: none;">
+        {% include /split_panels_right/view4.html %}
+    </div>
+
+    <div id="view5" style="display: none;">
+        {% include /split_panels_right/view5.html %}
+    </div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+{% include /scripts/14_tinkering_script.html %}
+{% include /subway_model/display_panels.html %}
+{% include /subway_model/train_stops.html %}
+
+

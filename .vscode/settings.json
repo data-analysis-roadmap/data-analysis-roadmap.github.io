@@ -1,0 +1,34 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".gitignore": true,
+        "docker-compose.yml": true,
+        "Gemfile": true,
+        "Gemfile.lock": true,
+        "_config.yml": true,
+        "README.md": true,
+        ".vscode": true,
+        ".jekyll-cache": true,
+        ".github": true,
+        "_site": true,
+        "_posts": true
+    },
+    "hide-files.files": [
+        ".gitignore",
+        "docker-compose.yml",
+        "Gemfile",
+        "Gemfile.lock",
+        "_config.yml",
+        "README.md",
+        ".vscode",
+        ".jekyll-cache",
+        ".github",
+        "_site",
+        "_posts"
+    ]
+}
