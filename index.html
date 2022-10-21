@@ -22,93 +22,6 @@ p {
     {% include navbar.html %}
    
   </header>
-<div class = "container pt-5 ">
-  
-  <!--Section: Content-->
-  <section class="dark-grey-text">
-    <!--First row-->
-    <div class="row">
-
-      <!--First column-->
-      <div class="col-md-6 mb-4">
-        <!-- Card -->
-        <a href="/K_subway_model_V1.html" class="card hoverable">
-          <!-- Card content -->
-          <div class="card-body">
-
-          	<p><i class="fas fa-comments fa-3x text-primary"></i></p>
-            <h5 class="dark-grey-text my-4">ROADMAP tool</h5>
-            <p class="text-muted font-weight-light mb-0">Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and traveling.</p>
-          </div>
-        </a>
-        <!-- Card -->
-      </div>
-      <!--First column-->
-
-      <!--Second column-->
-      <div class="col-md-6 mb-4">
-        <!-- Card -->
-        <a href="/report.html" class="card hoverable">
-          <!-- Card content -->
-          <div class="card-body">
-
-            <p><i class="fas fa-cubes fa-3x text-warning"></i></p>
-            <h5 class="dark-grey-text my-4">ROADMAP report</h5>
-            <p class="text-muted font-weight-light mb-0">Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and traveling.</p>
-
-          </div>
-
-        </a>
-        <!-- Card -->
-
-      </div>
-      <!--Second column-->
-
-    </div>
-    <!--First row-->
-
-	</section>
-  
-</div>
-
-
-
-
-<div class="container mt-5">
-
-  <h1>About the project</h1>
-  <hr class="w-header">
-
-  <p>
-    There are ∼7000 rare diseases affecting approximately 30,000,000 individuals in the U.S.A. and 95% of these rare diseases do not have a single Food and Drug Administration-approved therapy. Since the incentives for new drug development for rare diseases are limited, drug repurposing provides a promising way to identify effective treatments for rare diseases faster and cheaper than developing new drugs. Still, many challenges exist in the drug repurposing space, namely:
-
-
-  </p>
-
-  <ol>
-    <li>
-      lack of a consensus of the roles that various stakeholders play (patient advocacy organizations, researchers, physicians, government, pharmaceutical companies, etc.)
-    </li>
-    <li>
-      lack of a “roadmap” of how rare disease organizations should go about pursuing drug repurposing,
-    </li>
-    <li>
-      lack of support (data, finances, resources, guidelines, etc.) during the drug repurposing process.
-    </li>
-  </ol>
-
-  <p>
-    The Repurposing Of All Drugs, Mapping All Paths (ROADMAP) project proposes to fill some of these knowledge gaps through document analysis, surveys and interviews grounded in a participatory design approach. Ultimately, this project aims to not only answer some fundamental questions about the experience of drug repurposing for various stakeholders, but to also design a solution to some of the challenges rare disease organizations are facing through the creation of an interactive tool.
-
-
-  </p>
-</div>
-
-
-
-
-
-
 
 
 
@@ -130,11 +43,11 @@ p {
   <!-- Section description -->
 
   <!--Main Navigation-->
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 pt-5">
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 pt-5">
       {% for page in site.pages %}       
             {% if page.status == "active" %}        
             <div class="col">
-              <div class="card shadow-sm   text-dark bg-light mb-3 h-100" style="max-width: 25rem;">
+              <div class="card shadow-sm   card border border-dark mb-3 h-100" style="max-width: 20rem;">
                 <a href = "{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
                 </a>
 
@@ -149,8 +62,8 @@ p {
                   <a href = "{{ page.url }}" class = "py-2 px-2 btn-outline-secondary" target = "_blank">View →</a>
 
                 </div>
-                <div class="card-footer">
-                  <span class="badge bg-light text-dark">Active</span>
+                <div class="card-footer " >
+                  <span class="badge badge-success text-dark">Active</span>
                 </div>
               </div>
             </div>
@@ -159,13 +72,15 @@ p {
         </div>
 
         
-  <h1 class = "pb-3 mt-5">Archived demos</h1>
+  <h1 class = "pb-3 mt-3">Archived demos</h1>
+  <hr class="w-header">
+
   <!--Main Navigation-->
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
       {% for page in site.pages %}       
             {% if page.status == "archived" %}        
             <div class="col">
-              <div class="card shadow-sm   text-dark bg-light mb-3 h-100" style="max-width: 25rem;">
+              <div class="card shadow-sm   card border border-dark mb-3 h-100" style="max-width: 20rem;">
                 <a href = "{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
                 </a>
 
@@ -180,7 +95,7 @@ p {
 
                 </div>
                 <div class="card-footer">
-                  <span class="badge bg-warning text-dark ">Archived</span>
+                  <span class="badge badge-danger text-dark ">Archived</span>
                 </div>
               </div>
             </div>
