@@ -7,8 +7,6 @@
         -webkit-font-smoothing: antialiased;
     }
 
-
-
     .fontWeightBold {
         font-weight: 800 !important;
     }
@@ -40,36 +38,6 @@
     /* If you want the content centered horizontally and vertically */
     .centered {
         text-align: center;
-
-    }
-    .svgdiv {
-        height: 100%;
-        overflow: hidden;
-        object-fit: contain;
-        margin: 0;
-    }
-    .roadmap_ania {
-        max-width: 40vw;
-    }
-
-    .mainButton {
-        stroke: #29304C;
-        fill: #F0F1F2;
-
-    }
-
-    .mainButton:hover {
-        stroke: black;
-        fill: #ccc;
-        transition: 0.1s;
-    }
-
-    .mainButton input:checked ~ .checkmark {
-        fill: #2196F3;
-    }
-
-    .mainbuttonclicked {
-        fill: #2196F3;
 
     }
     #train_stop_1,
@@ -111,6 +79,17 @@
         top: 700px;
     }
 
+    .progress_line {
+        top: 20px;
+        width: 20px;
+        background-color: #000;
+        position: fixed;
+        z-index: 1;
+        opacity: 100% !important;
+        transition:all ease 0.9s;
+    }
+
+
     #train_stop_text_0,
     #train_stop_text_1,
     #train_stop_text_2,
@@ -121,7 +100,71 @@
         text-align: left;
     }
 
+    #train_line_stops {
+	margin:0;
+	padding-top:15px;
+    padding-left: 60px;  
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px;
+            left: 0!important;
 
+    }
+    
+
+
+    #stop_1_text_1, #stop_1_text_2, #stop_1_text_3, #stop_1_text_4, #stop_1_text_5 {
+	float:left;
+    width: 30px;
+    height: 30px;
+    margin-right: 95px;
+    left: 0 !important;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:8px;
+	cursor:pointer;
+    color: #fff;
+    border: none;
+    opacity: 0 ;
+    border-radius: 100%;	
+    display: none !important;
+    transition: 3s !important;
+    
+}
+
+#train_stop_text {
+    transition: 3s !important;
+
+}
+#train_line_stops {
+    padding-left:100px;
+}
+
+    .current #stop_1_text_1
+    , .current #stop_1_text_2
+    , .current #stop_1_text_3
+    , .current #stop_1_text_4
+    , .current #stop_1_text_5 {
+    display: block !important;
+    width:6px;
+	height:6px;
+
+	background:#777;
+    margin-right: 100px;
+	border:solid 7px #fff;
+    color: #000 !important;
+    opacity: 100%;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+
+    
+}
+
+.train_stop_text {
+    margin-top: -50px;
+}
     #train_stop_dot_0,
     #train_stop_dot_1,
     #train_stop_dot_2,
@@ -215,30 +258,17 @@
     }
 
 
-    #train_stop_0:hover,
     #train_stop_0.current,
-    #train_stop_1:hover,
     #train_stop_1.current,
-    #train_stop_2:hover,
     #train_stop_2.current,
-    #train_stop_3:hover,
     #train_stop_3.current,
-    #train_stop_4:hover,
     #train_stop_4.current {
         opacity: 1;
         filter: "alpha(opacity=100)";
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
 
-    #train_stop_0:hover #train_stop_dot_0,
-    #train_stop_1:hover #train_stop_dot_1,
-    #train_stop_2:hover #train_stop_dot_2,
-    #train_stop_3:hover #train_stop_dot_3,
-    #train_stop_4:hover #train_stop_dot_4 {
-        width: 35vw;
-        height: 15px;
-        border-radius: 0;
-    }
+ 
     .current #train_stop_dot_0,
     .current #train_stop_dot_1,
     .current #train_stop_dot_2,
@@ -247,7 +277,6 @@
         width: 35vw;
         height: 15px;
         border-radius: 0;
-        background-color: red;
     }
 
 
@@ -272,11 +301,266 @@
         margin-left: 50px;
 
     }
-    .main_line {
+    #main_line {
         height: 85vh;
         width: 20px;
         background-color: #E8E8E8;
         position: fixed;
         z-index: 1;
     }
+
+
+
+ #progress_line {
+    height: 10px;
+        width: 20px;
+        background-color: #808080;
+        position: fixed;
+        z-index: 1;
+        transition:.5s ease-in;
+
+ }
+
+ #progress_0 {
+    height: 10px;
+        background-color: #808080;
+
+ }
+ 
+#progress_line.progress_1
+   {
+    height: 120px;
+    }
+
+        #progress_line.progress_2
+   {
+    height: 320px;
+     }
+
+        #progress_line.progress_3
+   {
+    height: 520px;
+     }
+
+        #progress_line.progress_4
+   {
+    height: 720px;
+      }
+
+     
+
+
+
+
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #aaa;
+	transition:all ease 0.3s;
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #444;
+}
+
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#aaa;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#444;
+}
+
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:6px;
+	height:6px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+}
+
+#progress-bar-container li:hover:after {
+	background:#555;
+}
+
+#progress-bar-container li.active:after {
+	background:#207893;
+}
+
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: #eee;
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background: #207893;
+	background: -moz-linear-gradient(left, #207893 0%, #2ea3b7 100%);
+	background: -webkit-linear-gradient(left, #207893 0%,#2ea3b7 100%);
+	background: linear-gradient(to right, #207893 0%,#2ea3b7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207893', endColorstr='#2ea3b7',GradientType=1 );
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: #f3f3f3;
+	border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+}
+
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:#333;
+	letter-spacing:1px;
+}
+
+#progress-content-section .section-content p {
+	font-size:15px;
+	line-height:1.8em;
+	color:#777;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
