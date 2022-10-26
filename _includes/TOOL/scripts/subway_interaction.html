@@ -1,0 +1,182 @@
+
+<script>
+
+    $(document).ready(function () {
+
+
+        var expandBranch = function () {
+            $('#branch_line_home').removeClass('branch_line_inactive');
+            $('#branch_line_home').addClass('branch_line_active');
+
+            $('#branch_dot_home').removeClass('branch_dot_inactive');
+            $('#branch_dot_home').addClass('branch_dot_active');
+
+            $('#heading_prep').removeClass('active_heading_prep');
+            $('#heading_drugid').removeClass('active_heading_drugid');
+            $('#heading_validation').removeClass('active_heading_validation');
+            $('#heading_clinical').removeClass('active_heading_clinical');
+            $('#heading_outcome').removeClass('active_heading_outcome');
+            $('#heading_home').addClass('active_heading_home');
+
+            $('#line_progress').removeClass('prep_progress drugid_progress validation_progress clinical_progress outcome_progress');
+            $('#line_progress').addClass('home_progress');
+
+            $('#pill_container').removeClass('animate_prep animate_drugid animate_validation animate_clinical animate_outcome');
+            $('#pill_container').addClass('animate_home');
+
+            $('#branch_line_prep, #branch_line_drugid, #branch_line_validation, #branch_line_clinical, #branch_line_outcome').removeClass('branch_line_active');
+            $('#branch_line_prep, #branch_line_drugid, #branch_line_validation, #branch_line_clinical, #branch_line_outcome').addClass('branch_line_inactive');
+
+            $('#branch_dot_prep, #branch_dot_drugid, #branch_dot_validation, #branch_dot_clinical, #branch_dot_outcome').removeClass('branch_dot_active');
+            $('#branch_dot_prep, #branch_dot_drugid, #branch_dot_validation, #branch_dot_clinical, #branch_dot_outcome').addClass('branch_dot_inactive');
+        }
+        $('#main_dot_home').click(expandBranch);
+
+        var expandBranch = function () {
+            $('#branch_line_prep').removeClass('branch_line_inactive');
+            $('#branch_line_prep').addClass('branch_line_active');
+
+            $('#branch_dot_prep').removeClass('branch_dot_inactive');
+            $('#branch_dot_prep').addClass('branch_dot_active');
+
+            $('#heading_home').removeClass('active_heading_home');
+            $('#heading_drugid').removeClass('active_heading_drugid');
+            $('#heading_validation').removeClass('active_heading_validation');
+            $('#heading_clinical').removeClass('active_heading_clinical');
+            $('#heading_outcome').removeClass('active_heading_outcome');
+            $('#heading_prep').addClass('active_heading_prep');
+
+            $('#line_progress').removeClass('home_progress drugid_progress validation_progress clinical_progress outcome_progress');
+            $('#line_progress').addClass('prep_progress');
+
+            $('#pill_container').removeClass('animate_home animate_drugid animate_validation animate_clinical animate_outcome');
+            $('#pill_container').addClass('animate_prep');
+
+            $('#branch_line_home, #branch_line_drugid, #branch_line_validation, #branch_line_clinical, #branch_line_outcome').removeClass('branch_line_active');
+            $('#branch_line_home, #branch_line_drugid, #branch_line_validation, #branch_line_clinical, #branch_line_outcome').addClass('branch_line_inactive');
+
+            $('#branch_dot_home, #branch_dot_drugid, #branch_dot_validation, #branch_dot_clinical, #branch_dot_outcome').removeClass('branch_dot_active');
+            $('#branch_dot_home, #branch_dot_drugid, #branch_dot_validation, #branch_dot_clinical, #branch_dot_outcome').addClass('branch_dot_inactive');
+        }
+        $('#main_dot_prep').click(expandBranch);
+
+        var expandBranch = function () {
+            $('#branch_line_drugid').removeClass('branch_line_inactive');
+            $('#branch_line_drugid').addClass('branch_line_active');
+
+            $('#branch_dot_drugid').removeClass('branch_dot_inactive');
+            $('#branch_dot_drugid').addClass('branch_dot_active');
+
+            $('#heading_home').removeClass('active_heading_home');
+            $('#heading_prep').removeClass('active_heading_prep');
+            $('#heading_validation').removeClass('active_heading_validation');
+            $('#heading_clinical').removeClass('active_heading_clinical');
+            $('#heading_outcome').removeClass('active_heading_outcome');
+            $('#heading_drugid').addClass('active_heading_drugid');
+
+            $('#line_progress').removeClass('home_progress prep_progress validation_progress clinical_progress outcome_progress');
+            $('#line_progress').addClass('drugid_progress');
+            
+            $('#pill_container').removeClass('animate_home animate_prep animate_validation animate_clinical animate_outcome');
+            $('#pill_container').addClass('animate_drugid');
+
+            $('#branch_line_home, #branch_line_prep, #branch_line_validation, #branch_line_clinical, #branch_line_outcome').removeClass('branch_line_active');
+            $('#branch_line_home, #branch_line_prep, #branch_line_validation, #branch_line_clinical, #branch_line_outcome').addClass('branch_line_inactive');
+
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_validation, #branch_dot_clinical, #branch_dot_outcome').removeClass('branch_dot_active');
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_validation, #branch_dot_clinical, #branch_dot_outcome').addClass('branch_dot_inactive');
+        }
+        $('#main_dot_drugid').click(expandBranch);
+
+        var expandBranch = function () {
+            $('#branch_line_validation').removeClass('branch_line_inactive');
+            $('#branch_line_validation').addClass('branch_line_active');
+
+            $('#branch_dot_validation').removeClass('branch_dot_inactive');
+            $('#branch_dot_validation').addClass('branch_dot_active');
+
+            $('#heading_home').removeClass('active_heading_home');
+            $('#heading_prep').removeClass('active_heading_prep');
+            $('#heading_drugid').removeClass('active_heading_drugid');
+            $('#heading_clinical').removeClass('active_heading_clinical');
+            $('#heading_outcome').removeClass('active_heading_outcome');
+            $('#heading_validation').addClass('active_heading_validation');
+
+            $('#line_progress').removeClass('home_progress prep_progress drugid_progress clinical_progress outcome_progress');
+            $('#line_progress').addClass('validation_progress');
+
+            $('#pill_container').removeClass('animate_home animate_prep animate_drugid animate_clinical animate_outcome');
+            $('#pill_container').addClass('animate_validation');
+
+            $('#branch_line_home, #branch_line_prep, #branch_line_drugid, #branch_line_clinical, #branch_line_outcome').removeClass('branch_line_active');
+            $('#branch_line_home, #branch_line_prep, #branch_line_drugid, #branch_line_clinical, #branch_line_outcome').addClass('branch_line_inactive');
+
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_drugid, #branch_dot_clinical, #branch_dot_outcome').removeClass('branch_dot_active');
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_drugid, #branch_dot_clinical, #branch_dot_outcome').addClass('branch_dot_inactive');
+        }
+        $('#main_dot_validation').click(expandBranch);
+
+        var expandBranch = function () {
+
+            $('#branch_line_clinical').removeClass('branch_line_inactive');
+            $('#branch_line_clinical').addClass('branch_line_active');
+
+            $('#branch_dot_clinical').removeClass('branch_dot_inactive');
+            $('#branch_dot_clinical').addClass('branch_dot_active');
+
+            $('#heading_home').removeClass('active_heading_home');
+            $('#heading_prep').removeClass('active_heading_prep');
+            $('#heading_drugid').removeClass('active_heading_drugid');
+            $('#heading_validation').removeClass('active_heading_validation');
+            $('#heading_outcome').removeClass('active_heading_outcome');
+            $('#heading_clinical').addClass('active_heading_clinical');
+
+            $('#line_progress').removeClass('home_progress prep_progress drugid_progress validation_progress outcome_progress');
+            $('#line_progress').addClass('clinical_progress');
+
+            $('#pill_container').removeClass('animate_home animate_prep animate_drugid animate_validation animate_outcome');
+            $('#pill_container').addClass('animate_clinical');
+
+            $('#branch_line_home, #branch_line_prep, #branch_line_drugid, #branch_line_validation, #branch_line_outcome').removeClass('branch_line_active');
+            $('#branch_line_home, #branch_line_prep, #branch_line_drugid, #branch_line_validation, #branch_line_outcome').addClass('branch_line_inactive');
+
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_drugid, #branch_dot_validation, #branch_dot_outcome').removeClass('branch_dot_active');
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_drugid, #branch_dot_validation, #branch_dot_outcome').addClass('branch_dot_inactive');
+
+        }
+        $('#main_dot_clinical').click(expandBranch);
+
+        var expandBranch = function () {
+
+            $('#branch_line_outcome').removeClass('branch_line_inactive');
+            $('#branch_line_outcome').addClass('branch_line_active');
+
+            $('#branch_dot_outcome').removeClass('branch_dot_inactive');
+            $('#branch_dot_outcome').addClass('branch_dot_active');
+
+            $('#heading_home').removeClass('active_heading_home');
+            $('#heading_prep').removeClass('active_heading_prep');
+            $('#heading_drugid').removeClass('active_heading_drugid');
+            $('#heading_validation').removeClass('active_heading_validation');
+            $('#heading_clinical').removeClass('active_heading_clinical');
+            $('#heading_outcome').addClass('active_heading_outcome');
+
+            $('#line_progress').removeClass('home_progress prep_progress drugid_progress validation_progress clinical_progress');
+            $('#line_progress').addClass('outcome_progress');
+
+            $('#pill_container').removeClass('animate_home animate_prep animate_drugid animate_validation animate_clinical');
+            $('#pill_container').addClass('animate_outcome');
+
+            $('#branch_line_home, #branch_line_prep, #branch_line_drugid, #branch_line_validation, #branch_line_clinical').removeClass('branch_line_active');
+            $('#branch_line_home, #branch_line_prep, #branch_line_drugid, #branch_line_validation, #branch_line_clinical').addClass('branch_line_inactive');
+
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_drugid, #branch_dot_validation, #branch_dot_clinical').removeClass('branch_dot_active');
+            $('#branch_dot_home, #branch_dot_prep, #branch_dot_drugid, #branch_dot_validation, #branch_dot_clinical').addClass('branch_dot_inactive');
+
+        }
+        $('#main_dot_outcome').click(expandBranch);
+
+    });
+</script>
+
+

@@ -3,6 +3,8 @@ title: "home"
 layout: default
 ---
 
+
+
 <style >
 
 .fullheight {
@@ -16,6 +18,29 @@ p {
     height: 100px !important;
     object-fit: cover !important;
   }
+
+  .hero {
+    height: 100%;
+    object-fit: fill;
+    position: fixed;
+    position: center center;
+    background-size: cover;
+    opacity: 25%;
+
+  }
+
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    background-color: white;
+
+}
+
 </style>
   <!--Main Navigation-->
   <header>
@@ -25,89 +50,32 @@ p {
 
 
 
+<img class = "w-100 hero" src = "{{site.baseurl}}/assets/images/subway-lines.png"/>
 
+<div class = "container content p-5 my-5">
+  <h1>ROADMAP</h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Maecenas accumsan lacus vel facilisis volutpat est velit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Neque sodales ut etiam sit amet nisl. Egestas pretium aenean pharetra magna. Netus et malesuada fames ac. Eu scelerisque felis imperdiet proin fermentum. Vel eros donec ac odio tempor orci dapibus ultrices in. Velit euismod in pellentesque massa placerat duis. Arcu risus quis varius quam. </p>
 
+  <p>Cras adipiscing enim eu turpis egestas pretium. Non odio euismod lacinia at quis risus sed vulputate. Dolor magna eget est lorem ipsum. Nisi est sit amet facilisis. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Pharetra convallis posuere morbi leo urna. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Senectus et netus et malesuada fames. Diam maecenas ultricies mi eget mauris. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut eu sem integer vitae justo eget magna fermentum. Libero volutpat sed cras ornare arcu dui vivamus. Adipiscing elit ut aliquam purus sit amet luctus. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Mi sit amet mauris commodo. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Tortor consequat id porta nibh. Vehicula ipsum a arcu cursus vitae congue.
+  </p>
+</div>
 
+<div class = "container content p-5 my-5">
+  <h1>ROADMAP</h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Maecenas accumsan lacus vel facilisis volutpat est velit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Neque sodales ut etiam sit amet nisl. Egestas pretium aenean pharetra magna. Netus et malesuada fames ac. Eu scelerisque felis imperdiet proin fermentum. Vel eros donec ac odio tempor orci dapibus ultrices in. Velit euismod in pellentesque massa placerat duis. Arcu risus quis varius quam. </p>
 
-
-
-
+  <p>Cras adipiscing enim eu turpis egestas pretium. Non odio euismod lacinia at quis risus sed vulputate. Dolor magna eget est lorem ipsum. Nisi est sit amet facilisis. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Pharetra convallis posuere morbi leo urna. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Senectus et netus et malesuada fames. Diam maecenas ultricies mi eget mauris. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut eu sem integer vitae justo eget magna fermentum. Libero volutpat sed cras ornare arcu dui vivamus. Adipiscing elit ut aliquam purus sit amet luctus. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Mi sit amet mauris commodo. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Tortor consequat id porta nibh. Vehicula ipsum a arcu cursus vitae congue.
+  </p>
+</div>
 
 
 
   
-<div class="container fullheight mt-5 pt-5 mb-5 pb-5">
-
-  <h1 class = "pb-3">Live demos</h1>
-  <hr class="w-header">
-  <!-- Section description -->
-
-  <!--Main Navigation-->
-    <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 pt-5">
-      {% for page in site.pages %}       
-            {% if page.status == "active" %}        
-            <div class="col">
-              <div class="card shadow-sm   card border border-dark mb-3 h-100" style="max-width: 20rem;">
-                <a href = "{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
-                </a>
-
-
-                <div class="card-body">
-                  <h5 class="card-title">
-                   {{ page.title }}
-                  </h5>
-                  <p class="card-text">
-                    {{ page.description }}
-                  </p>
-                  <a href = "{{ page.url }}" class = "py-2 px-2 btn-outline-secondary" target = "_blank">View →</a>
-
-                </div>
-                <div class="card-footer " >
-                  <span class="badge badge-success text-dark">Active</span>
-                </div>
-              </div>
-            </div>
-            {% endif %}        
-      {% endfor %}
-        </div>
-
-        
-  <h1 class = "pb-3 mt-3">Archived demos</h1>
   
-  <hr class="w-header">
 
-  <!--Main Navigation-->
-    <div class="row row-cols-1 row-cols-md-4 g-4">
-      {% for page in site.pages %}       
-            {% if page.status == "archived" %}        
-            <div class="col">
-              <div class="card shadow-sm   card border border-dark mb-3 h-100" style="max-width: 20rem;">
-                <a href = "{{ page.url }}" class = "" target = "_blank">                <img src="./assets/images/home_images/{{page.fname}}.png" class="card-img-top cardimg" alt="...">
-                </a>
 
-                <div class="card-body">
-                  <h5 class="card-title">
-                    {{ page.title }}
-                  </h5>
-                  <p class="card-text">
-                    {{ page.description }}
-                </p>
-                <a href = "{{ page.url }}" class = "py-2 px-2 btn-outline-secondary" target = "_blank">View →</a>
-
-                </div>
-                <div class="card-footer">
-                  <span class="badge badge-danger text-dark ">Archived</span>
-                </div>
-              </div>
-            </div>
-            {% endif %}        
-      {% endfor %}
-        </div>
-
-        
-  </div>
-
-  
   
   
   {% include footer.html %}

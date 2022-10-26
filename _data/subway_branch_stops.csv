@@ -1,0 +1,17 @@
+main_line,branch_stop_name
+prep,Biobank
+prep,Registries
+prep,Research
+drugid,Drug screens
+drugid,Biology-first
+drugid,Drug use data
+drugid,Computational
+drugid,RW reports
+validation,In vivo
+validation,In vitro
+validation,RWE evaluation
+clinical,Clinical trial
+clinical,Off-label use
+outcome,Approvals
+outcome,Alternative
+outcome,Abandoned

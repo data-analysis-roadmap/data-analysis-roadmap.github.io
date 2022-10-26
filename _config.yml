@@ -2,7 +2,7 @@
 name: 'ROADMAP'
 logo: 'assets/ROADMAP.png'
 favicon: 'assets/ROADMAP.ico'
-baseurl: '/data-analysis-roadmap.github.io'
+baseurl: ""
 
 include: ["_pages"]
 permalink: /:title/

@@ -3,6 +3,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 
 <style>
+
   .center-block {
     display: block;
     margin-left: auto;
@@ -20,6 +21,8 @@
   color: #6F1E8B;
  }
 
+ .navbar {z-index: 100000;}
+
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,37 +37,16 @@
         </li>
 
    
-        <li class="nav-item ">
-          <a class="nav-link" href = "/K_subway_model_V1.html">ROADMAP Tool</a>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href = "/ROADMAP_tool.html">ROADMAP Tool</a>
         </li>
-        <li class="nav-item ">
+        <li class="nav-item mx-2 ">
           <a class="nav-link" href = "/report.html">ROADMAP Report</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdownMenuLink"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Demos
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-            {% for page in site.pages %}     
-            {% if page.status == "active" %}        
-
-            <li>
-              <a class="dropdown-item nav-link" target = "_blank" href="{{ page.url }}">{{ page.title }}</a>
-            </li>
-            {% endif %}
-
-          {% endfor %}
-
-          </ul>
+        <li class="nav-item mx-2 ">
+          <a class="nav-link" href = "/dashboard.html">Dashboard</a>
         </li>
+
       </ul>
       
       <ul class="navbar-nav d-flex ml-auto nav-flex-icons">
