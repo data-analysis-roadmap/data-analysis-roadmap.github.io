@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{page.title}} | {{site.name}}</title>
+
+    {% seo %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+    <!-- Font Awesome -->
+    
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+    rel="stylesheet"
+  />    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+
+  <link
+  href="{{site.baseurl}}/assets/css/style.css"
+  rel="stylesheet"
+/>    
+
+  </head>
+
+<body >
+
+
+    {%include navbar.html%}
+
+    <!-- Content -->
+    <main role="main" class="site-content">
+        <div class = "container p-5">
+        {{ content }}
+    </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+></script>   
+
+</body>
+
+</html>

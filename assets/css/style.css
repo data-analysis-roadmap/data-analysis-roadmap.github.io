@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --roadmap_dark: #363443;
+    --roadmap_light: #fff;
+    --accent1: #2E3093;
+    --accent2: #7AACDD;
+    --accent3: #F04E3E;
+    --accent4: #F9C20A;
+  }
+
+    body, .fontWorkSans {
+        font-family: 'IBM Plex Sans', sans-serif !important;
+    }
+
+    body {
+        min-height: 100vh !important;
+    }
+
+    body a {
+        color: var(--accent1);
+    }
+    body p, body li, body ol {
+        font-size: .85em;
+        color: var(--roadmap_dark);
+
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 3em;
+        color: var(--roadmap_dark);
+
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 2em;
+
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 1.5em;
+
+    }
+    h4  {
+        font-weight: 600;
+        font-size: 1em;
+
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: var(--roadmap_dark);
+
+    }
