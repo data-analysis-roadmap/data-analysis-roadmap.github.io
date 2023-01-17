@@ -4,6 +4,12 @@ layout: default
 permalink: "/roadmap.html"
 ---
 
+<link
+href="{{site.baseurl}}/assets/css/tool.css"
+rel="stylesheet"
+/>    
+
+
 <style>
     .active_panel {
         display: block !important;
@@ -16,14 +22,12 @@ permalink: "/roadmap.html"
 
 {% include navbar.html %}
 
-{% include /TOOL/style/subway_map_style.html %}
-{% include /TOOL/style/split_screen_style.html %}
 
 <div style="position: relative; z-index: 100000 !important;">
-    <h4 id="heading_2" class="main_heading p-1 px-5 shadow-5-strong">Drug Identification</h4>
-    <h4 id="heading_3" class="main_heading p-1 px-5 shadow-5-strong">Drug Identification</h4>
-    <h4 id="heading_4" class="main_heading p-1 px-5 shadow-5-strong">Validation</h4>
-    <h4 id="heading_5" class="main_heading p-1 px-5 shadow-5-strong">Clinical use</h4>
+    <h4 id="heading_2" class="main_heading p-1 px-5 shadow-5-strong">Identification</h4>
+    <h4 id="heading_3" class="main_heading p-1 px-5 shadow-5-strong">Validation</h4>
+    <h4 id="heading_4" class="main_heading p-1 px-5 shadow-5-strong">Clinical Use</h4>
+    <h4 id="heading_5" class="main_heading p-1 px-5 shadow-5-strong">Outcomes</h4>
 </div>
 
 <div class="split left " scroll="no" style="overflow: hidden">
@@ -45,8 +49,9 @@ permalink: "/roadmap.html"
                 <!-- START STOP 1 (HOME) -->
                 <div class="main_stop_1 main_stop">
                     <div id="main_dot_1" class="main_dot" onclick="mainstop1()">
-                        <p class="main_dot_text">Home</p>
                     </div>
+                    <p class="main_dot_text">Home</p>
+
                 </div>
                 <!-- END STOP 1 (HOME) -->
 
@@ -56,8 +61,9 @@ permalink: "/roadmap.html"
                     <div id="main_dot_2" class="main_dot" onclick="mainstop2()">
                         <div id="branch_line_2" class="branch_line_inactive">
                         </div>
-                        <p class="main_dot_text">Drug Identification</p>
                     </div>
+                    <p class="main_dot_text">Identification</p>
+
                     <div id="branch_dot_2" class="branch_dot_inactive">
                         <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop1()">
                             <p class="branch_dot_text">Drug screen</p>
@@ -89,8 +95,9 @@ permalink: "/roadmap.html"
                     <div id="main_dot_3" class="main_dot" onclick="mainstop3()">
                         <div id="branch_line_3" class="branch_line_inactive">
                         </div>
-                        <p class="main_dot_text">Drug Validation</p>
                     </div>
+                    <p class="main_dot_text">Validation</p>
+
                     <div id="branch_dot_3" class="branch_dot_inactive">
                         <div id="branch_dot" class="branch_dot" onclick="mainstop3_stop1()">
                             <p class="branch_dot_text">In vivo</p>
@@ -111,8 +118,9 @@ permalink: "/roadmap.html"
                     <div id="main_dot_4" class="main_dot" onclick="mainstop4()">
                         <div id="branch_line_4" class="branch_line_inactive">
                         </div>
-                        <p class="main_dot_text">Drug Clinical Use</p>
                     </div>
+                    <p class="main_dot_text">Clinical Use</p>
+
                     <div id="branch_dot_4" class="branch_dot_inactive">
                         <div id="branch_dot" class="branch_dot" onclick="mainstop4_stop1()">
                             <p class="branch_dot_text">Clinical trial</p>
@@ -130,8 +138,9 @@ permalink: "/roadmap.html"
                     <div id="main_dot_5" class="main_dot" onclick="mainstop5()">
                         <div id="branch_line_5" class="branch_line_inactive">
                         </div>
-                        <p class="main_dot_text">Outcome</p>
                     </div>
+                    <p class="main_dot_text">Outcome</p>
+
                     <div id="branch_dot_5" class="branch_dot_inactive">
                         <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop1()">
                             <p class="branch_dot_text">Approvals</p>
@@ -157,35 +166,35 @@ permalink: "/roadmap.html"
 <div class="split right">
 
     <!-- main stops -->
-    <div id="mainstop1" class="">{% include /content/mainstops/mainstop1.html %}</div>
-    <div id="mainstop2" style="display: none;"> {% include /content/mainstops/mainstop2.html %}</div>
-    <div id="mainstop3" style="display: none;">{% include /content/mainstops/mainstop3.html %}</div>
-    <div id="mainstop4" style="display: none;">{% include /content/mainstops/mainstop4.html %}</div>
-    <div id="mainstop5" style="display: none;">{% include /content/mainstops/mainstop5.html %}</div>
+    <div id="mainstop1" class="">{% include /TOOL/content/mainstops/mainstop1.html %}</div>
+    <div id="mainstop2" style="display: none;"> {% include /TOOL/content/mainstops/mainstop2.html %}</div>
+    <div id="mainstop3" style="display: none;">{% include /TOOL/content/mainstops/mainstop3.html %}</div>
+    <div id="mainstop4" style="display: none;">{% include /TOOL/content/mainstops/mainstop4.html %}</div>
+    <div id="mainstop5" style="display: none;">{% include /TOOL/content/mainstops/mainstop5.html %}</div>
 
     <!-- branch 1  -->
     <!-- none here for now -->
 
     <!-- branch 2  -->
-    <div id="mainstop2_stop1" style="display: none;">{% include /content/mainstop2/stop1.html %}</div>
-    <div id="mainstop2_stop2" style="display: none;">{% include /content/mainstop2/stop2.html %}</div>
-    <div id="mainstop2_stop3" style="display: none;">{% include /content/mainstop2/stop3.html %}</div>
-    <div id="mainstop2_stop4" style="display: none;">{% include /content/mainstop2/stop4.html %}</div>
-    <div id="mainstop2_stop5" style="display: none;">{% include /content/mainstop2/stop5.html %}</div>
+    <div id="mainstop2_stop1" style="display: none;">{% include /TOOL/content/mainstop2/stop1.html %}</div>
+    <div id="mainstop2_stop2" style="display: none;">{% include /TOOL/content/mainstop2/stop2.html %}</div>
+    <div id="mainstop2_stop3" style="display: none;">{% include /TOOL/content/mainstop2/stop3.html %}</div>
+    <div id="mainstop2_stop4" style="display: none;">{% include /TOOL/content/mainstop2/stop4.html %}</div>
+    <div id="mainstop2_stop5" style="display: none;">{% include /TOOL/content/mainstop2/stop5.html %}</div>
 
     <!-- branch 3 -->
-    <div id="mainstop3_stop1" style="display: none;">{% include /content/mainstop3/stop1.html %}</div>
-    <div id="mainstop3_stop2" style="display: none;">{% include /content/mainstop3/stop2.html %}</div>
-    <div id="mainstop3_stop3" style="display: none;">{% include /content/mainstop3/stop3.html %}</div>
+    <div id="mainstop3_stop1" style="display: none;">{% include /TOOL/content/mainstop3/stop1.html %}</div>
+    <div id="mainstop3_stop2" style="display: none;">{% include /TOOL/content/mainstop3/stop2.html %}</div>
+    <div id="mainstop3_stop3" style="display: none;">{% include /TOOL/content/mainstop3/stop3.html %}</div>
 
     <!-- branch 4 -->
-    <div id="mainstop4_stop1" style="display: none;">{% include /content/mainstop4/stop1.html %}</div>
-    <div id="mainstop4_stop2" style="display: none;">{% include /content/mainstop4/stop2.html %}</div>
+    <div id="mainstop4_stop1" style="display: none;">{% include /TOOL/content/mainstop4/stop1.html %}</div>
+    <div id="mainstop4_stop2" style="display: none;">{% include /TOOL/content/mainstop4/stop2.html %}</div>
 
     <!-- branch 5 -->
-    <div id="mainstop5_stop1" style="display: none;">{% include /content/mainstop5/stop1.html %}</div>
-    <div id="mainstop5_stop2" style="display: none;">{% include /content/mainstop5/stop2.html %}</div>
-    <div id="mainstop5_stop3" style="display: none;">{% include /content/mainstop5/stop3.html %}</div>
+    <div id="mainstop5_stop1" style="display: none;">{% include /TOOL/content/mainstop5/stop1.html %}</div>
+    <div id="mainstop5_stop2" style="display: none;">{% include /TOOL/content/mainstop5/stop2.html %}</div>
+    <div id="mainstop5_stop3" style="display: none;">{% include /TOOL/content/mainstop5/stop3.html %}</div>
 
 </div>
 
