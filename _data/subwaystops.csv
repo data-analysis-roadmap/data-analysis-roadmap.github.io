@@ -1,0 +1,27 @@
+stopnumber,category,substop,name
+1,heading,,Home
+2,heading,,Drug identification
+3,heading,,Drug validation
+4,heading,,Drug clinical use
+5,heading,,Outcome
+1,mainstop,,Home
+2,mainstop,,Drug identification
+3,mainstop,,Drug validation
+4,mainstop,,Drug clinical use
+5,mainstop,,Outcome
+1,branchstop,1,ROADMAP Overview
+1,branchstop,2,Organizational Support Options
+1,branchstop,3,Roadblocks & Advice
+2,branchstop,1,Drug Screen approach
+2,branchstop,2,Pathogenesis targeting approach 
+2,branchstop,3,Data from similar diseases approach
+2,branchstop,4,Computational approach
+2,branchstop,5,Off-label use approach
+3,branchstop,1,In vivo
+3,branchstop,2,In vitro
+3,branchstop,3,Use of RWE
+4,branchstop,1,Clinical Trial
+4,branchstop,2,Off Label Use
+5,branchstop,1,Approvals
+5,branchstop,2,Alternatives
+5,branchstop,3,Abandoned

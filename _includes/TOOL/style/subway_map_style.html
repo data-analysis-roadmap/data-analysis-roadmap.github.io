@@ -1,10 +1,8 @@
 <style>
-        .main_line {
+    .main_line {
         height: 100vh;
         width: 25px;
         background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-
-        margin-top: 35px;
         margin-left: 100px;
         background-color: lightgray;
         position: absolute;
@@ -12,13 +10,14 @@
         position: relative;
         flex-direction: column;
         justify-content: space-between;
-        z-index: 1 !important;
+        z-index: 0 !important;
     }
-    
 
     .main_stop {
         margin-top: 80px;
+        padding-top: 50px;
     }
+
     .main_dot {
         width: 23px;
         height: 23px;
@@ -55,8 +54,8 @@
         z-index: 2 !important;
         transition: .8s ease;
     }
-    
-.branch_dot_active {
+
+    .branch_dot_active {
         list-style: none;
         width: 0px;
         height: 0px;
@@ -76,7 +75,6 @@
         transition: .8s ease;
     }
 
-
     .branch_line_active {
         height: 14px;
         width: 37vw;
@@ -91,23 +89,39 @@
         transition: width 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
+    #branch_line_2.branch_line_active {
+        background-color: #00B050 !important;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
 
-    #branch_line_prep.branch_line_active { background-color: #00B050 !important; background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-}
-    #branch_line_drugid.branch_line_active { background-color: #F71E2F !important;background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
- }
-    #branch_line_validation.branch_line_active { background-color: #7AACDD !important; background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-}
-    #branch_line_clinical.branch_line_active { background-color: #F9A72B !important; background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-}
-    #branch_line_outcome.branch_line_active { background-color: #2E3092 !important;background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
- }
-    
-.branch_dot_inactive { opacity: 0; }
+    #branch_line_3.branch_line_active {
+        background-color: #F71E2F !important;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
 
-.branch_dot_active { opacity: 100%; }
+    #branch_line_4.branch_line_active {
+        background-color: #7AACDD !important;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
 
-    #branch_dot_drugid, #branch_dot_prep, #branch_dot_validation ,#branch_dot_clinical, #branch_dot_outcome, #branch_dot_home {
+    #branch_line_5.branch_line_active {
+        background-color: #F9A72B !important;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
+
+    .branch_dot_inactive {
+        opacity: 0;
+    }
+
+    .branch_dot_active {
+        opacity: 100%;
+    }
+
+    #branch_dot_3,
+    #branch_dot_2,
+    #branch_dot_4,
+    #branch_dot_5,
+    #branch_dot_1 {
         display: flex;
         position: relative;
         flex-direction: row;
@@ -120,7 +134,6 @@
         border-radius: 50%;
         background: white;
         background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-
         border: 1px solid black;
         line-height: 2em;
         margin-left: 80px;
@@ -130,57 +143,51 @@
         font-weight: 700;
         transition: .8s ease;
         z-index: 1000000 !important;
-
     }
 
-    .main_dot:hover, .branch_dot:hover {
+    .main_dot:hover,
+    .branch_dot:hover {
         background: black;
         background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
 
-}
+    .branch_dot_text {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+        text-align: center;
+    }
 
-.branch_dot_text {
-    margin-top: 15px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: normal;
-    text-align: center;
-}
+    #line_progress {
+        background-color: #989898;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+        height: 110px;
+        transition: .2s linear;
+    }
 
-#line_progress {
-    background-color:#989898;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    #line_progress.progress_1 {
+        height: 150px;
+    }
 
-    height: 110px   ;
-    transition: .2s linear;
-}
+    #line_progress.progress_2 {
+        height: 320px;
+    }
 
-#line_progress.home_progress {
-    height: 110px   ;
-}
+    #line_progress.progress_3 {
+        height: 435px;
+    }
 
-#line_progress.prep_progress {
-height: 225px;
-}
+    #line_progress.progress_4 {
+        height: 604px;
+    }
 
-#line_progress.drugid_progress {
-height: 335px;
-}
-
-#line_progress.validation_progress {
-height: 454px;
-}
-
-#line_progress.clinical_progress {
-height: 570px;
-}
-#line_progress.outcome_progress {
-height: 685px;
-}
+    #line_progress.progress_5 {
+        height: 770px;
+    }
 
 
-
-#pill_container {
+    #pill_container {
         display: block;
         position: absolute;
         top: 30px;
@@ -210,8 +217,8 @@ height: 685px;
     }
 
 
-#main_pill_img {
-    display: block;
+    #main_pill_img {
+        display: block;
         position: relative;
         width: 60px;
         height: 60px;
@@ -226,99 +233,89 @@ height: 685px;
         -o-transition: top 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
-}
+    }
 
 
-#pill_container, #pill_container.animate_home {
-    top: 105px;
+    #pill_container,
+    #pill_container.animate_1 {
+        top: 150px;
 
-}
+    }
 
-#pill_container.animate_prep {
-    top: 220px;
-}
+    #pill_container.animate_2 {
+        top: 310px;
+    }
 
-#pill_container.animate_drugid {
-    top: 335px;
-}
+    #pill_container.animate_3 {
+        top: 470px;
+    }
 
-#pill_container.animate_validation {
-    top: 454px;
-}
+    #pill_container.animate_4 {
+        top: 645px;
+    }
 
-#pill_container.animate_clinical {
-    top: 570px;
-}
-#pill_container.animate_outcome {
-    top: 685px;
-}
+    #pill_container.animate_5 {
+        top: 810px;
+    }
 
+    #heading_1,
+    #heading_2,
+    #heading_3,
+    #heading_4,
+    #heading_5 {
+        display: none;
+    }
 
-#heading_home, #heading_prep, #heading_drugid, #heading_validation, #heading_clinical, #heading_outcome, #heading_prep_biobank, #heading_prep_registries, #heading_prep_research {
-    display: none;
-}
+    #heading_1.active_heading_1 {
+        display: block;
+    }
 
-#heading_home.active_heading_home {
-    display: block;
-}
+    #heading_2.active_heading_2 {
+        background-color: #00B050;
+        color: #fff;
+        text-align: right;
+        display: block;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
 
-#heading_prep_registries.active_heading_prep_registries, #heading_prep_research.active_heading_prep_research, #heading_prep_biobank.active_heading_prep_biobank {
-    background-color: pink; 
-    color: #fff;  
-    text-align: right;
-    display: block;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
 
-}
+    #heading_3.active_heading_3 {
+        background-color: #F71E2F;
+        color: #fff;
+        text-align: right;
+        display: block;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
 
-#heading_prep.active_heading_prep {
-    background-color: #00B050; 
-    color: #fff;  
-    text-align: right;
-    display: block;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
 
-}
+    #heading_4.active_heading_4 {
+        background-color: #7AACDD;
+        color: #000;
+        text-align: right;
+        display: block;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
 
-#heading_drugid.active_heading_drugid {
-    background-color: #F71E2F; 
-    color: #fff;  
-    text-align: right;
-    display: block;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    }
 
-}
+    #heading_5.active_heading_5 {
+        background-color: #F9A72B;
+        color: #000;
+        text-align: right;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+        display: block;
+    }
 
-#heading_validation.active_heading_validation {
-    background-color: #7AACDD; 
-    color: #000;  
-    text-align: right;
-    display: block;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    #heading_outcome.active_heading_outcome {
+        background-color: #2E3092;
+        color: #fff;
+        text-align: right;
+        background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+        display: block;
+    }
 
-}
-
-#heading_clinical.active_heading_clinical {
-    background-color: #F9A72B; 
-    color: #000;  
-    text-align: right;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-
-    display: block;
-}
-
-#heading_outcome.active_heading_outcome {
-    background-color: #2E3092; 
-    color: #fff;  
-    text-align: right;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    .branch_dot,
+    .main_dot {
+        cursor: pointer;
+    }
     
-    display: block;
-}
-
-
-.branch_dot, .main_dot {
-    cursor: pointer;
-}
-
 </style>

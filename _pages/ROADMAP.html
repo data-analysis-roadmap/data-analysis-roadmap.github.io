@@ -5,8 +5,13 @@ permalink: "/roadmap.html"
 ---
 
 <style>
-    .active_panel {display: block !important;}
-    .inactive_panel {display: none !important;}
+    .active_panel {
+        display: block !important;
+    }
+
+    .inactive_panel {
+        display: none !important;
+    }
 </style>
 
 {% include navbar.html %}
@@ -14,273 +19,173 @@ permalink: "/roadmap.html"
 {% include /TOOL/style/subway_map_style.html %}
 {% include /TOOL/style/split_screen_style.html %}
 
-<div style = "z-index: 10000;">
-
-    <div id = "heading_home" class = "main_heading p-1 active_heading_home  "> 
-        
-    </div>
-
-    <h4 id = "heading_prep" class = "main_heading p-1 px-5 shadow-5-strong ">Prep</h4>
-
-        <h4 id = "heading_prep_biobank" class = "main_heading p-1 px-5 shadow-5-strong ">Biobank</h4>
-        <h4 id = "heading_prep_research" class = "main_heading p-1 px-5 shadow-5-strong ">Research</h4>
-        <h4 id = "heading_prep_registries" class = "main_heading p-1 px-5 shadow-5-strong ">Registries</h4>
-
-    <h4 id = "heading_drugid" class = "main_heading p-1  px-5  shadow-5-strong ">Drug Identification</h4>
-
-    <h4 id = "heading_validation" class = "main_heading p-1 px-5   shadow-5-strong ">Validation</h4>
-
-    <h4 id = "heading_clinical" class = "main_heading p-1 px-5   shadow-5-strong ">Clinical use</h4>
-
-    <h4 id = "heading_outcome" class = "main_heading p-1  px-5  shadow-5-strong " >Outcome</h4>
-
-
+<div style="position: relative; z-index: 100000 !important;">
+    <h4 id="heading_2" class="main_heading p-1 px-5 shadow-5-strong">Drug Identification</h4>
+    <h4 id="heading_3" class="main_heading p-1 px-5 shadow-5-strong">Drug Identification</h4>
+    <h4 id="heading_4" class="main_heading p-1 px-5 shadow-5-strong">Validation</h4>
+    <h4 id="heading_5" class="main_heading p-1 px-5 shadow-5-strong">Clinical use</h4>
 </div>
+
 <div class="split left " scroll="no" style="overflow: hidden">
-<div class = " container">
-    <!-- START MAIN SUBWAY LINE -->
-    <div class="main_line">
-        <div id="line_progress">
 
-            <!-- START PILL -->
-            <div id="pill_container">
-                <div id="main_pill"><img id = "main_pill_img" src = "https://img.icons8.com/stickers/344/prescription-pill-bottle.png"></div>
-            </div>
-            <!-- END PILL -->
+    <div class="container">
 
+        <!-- START MAIN SUBWAY LINE -->
+        <div class="main_line">
+            <div id="line_progress">
 
-            <!-- START STOP 1 (HOME) -->
-            <div class = "main_stop_home main_stop">
-            <div id="main_dot_home" class="main_dot" onclick="home()">
-                <p class="main_dot_text">Home</p>
-
-            </div>
-<!--             <div id="branch_dot_home" class="branch_dot_inactive">
-                <div id="branch_dot" class="branch_dot" onclick="about()">
-                    <p class="branch_dot_text">about</p>
+                <!-- START PILL -->
+                <div id="pill_container">
+                    <div id="main_pill"><img id="main_pill_img"
+                            src="https://img.icons8.com/stickers/344/prescription-pill-bottle.png"></div>
                 </div>
-            </div>
- -->        </div>
-            <!-- END STOP 1 (HOME) -->
+                <!-- END PILL -->
 
-            <!-- START STOP 2 (PREP) -->
-            <div class = "main_stop_prep main_stop">
 
-                <div id="main_dot_prep" class="main_dot" onclick="prep()">
-                <div id="branch_line_prep" class="branch_line_inactive">
-                </div>
-
-            <p class="main_dot_text">Prep</p>
-            </div>
-            <div id="branch_dot_prep" class="branch_dot_inactive">
-                <div id="branch_dot" class="branch_dot" onclick="biobank()">
-                    <p class="branch_dot_text">Biobank</p>
-                </div>
-                <div id="branch_dot" class="branch_dot" onclick="registries()">
-                    <p class="branch_dot_text">Registries</p>
-                </div>
-                <div id="branch_dot" class="branch_dot" onclick="research()">
-                    <p class="branch_dot_text">Research</p>
-                </div>
-            </div>
-            </div>
-
-            <!-- END STOP 2 (PREP) -->
-
-            <!-- START STOP 3 (DRUG ID) -->
-            <div class = "main_stop_drugid main_stop">
-
-            <div id="main_dot_drugid" class="main_dot" onclick="drugid()">
-                <div id="branch_line_drugid" class="branch_line_inactive">
-                </div>
-                <p class="main_dot_text">Drug ID</p>
-            </div>
-            <div id="branch_dot_drugid" class="branch_dot_inactive">
-                    <div id="branch_dot" class="branch_dot" onclick="drug_screens()" >
-                        <p class="branch_dot_text">Drug screens</p>
+                <!-- START STOP 1 (HOME) -->
+                <div class="main_stop_1 main_stop">
+                    <div id="main_dot_1" class="main_dot" onclick="mainstop1()">
+                        <p class="main_dot_text">Home</p>
                     </div>
-                    <div id="branch_dot" class="branch_dot" onclick="biology_first()">
-                        <p class="branch_dot_text">Biology-first</p>
+                </div>
+                <!-- END STOP 1 (HOME) -->
+
+
+                <!-- START STOP 2 -->
+                <div class="main_stop_2 main_stop">
+                    <div id="main_dot_2" class="main_dot" onclick="mainstop2()">
+                        <div id="branch_line_2" class="branch_line_inactive">
+                        </div>
+                        <p class="main_dot_text">Drug Identification</p>
                     </div>
-                    <div id="branch_dot" class="branch_dot" onclick="drug_use_data()">
-                        <p class="branch_dot_text">Drug use data</p>
+                    <div id="branch_dot_2" class="branch_dot_inactive">
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop1()">
+                            <p class="branch_dot_text">Drug screen</p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop2()">
+                            <p class="branch_dot_text">Pathogenesis targeting</p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop3()">
+                            <p class="branch_dot_text">Data from similar diseases
+                            </p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop4()">
+                            <p class="branch_dot_text">Computational
+                            </p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop5()">
+                            <p class="branch_dot_text">Off-label use
+                            </p>
+                        </div>
+
                     </div>
-                    <div id="branch_dot" class="branch_dot" onclick="computational()">
-                        <p class="branch_dot_text">Computational</p>
+                </div>
+
+                <!-- END STOP 2-->
+
+                <!-- START STOP 3-->
+                <div class="main_stop_3 main_stop">
+
+                    <div id="main_dot_3" class="main_dot" onclick="mainstop3()">
+                        <div id="branch_line_3" class="branch_line_inactive">
+                        </div>
+                        <p class="main_dot_text">Drug Validation</p>
                     </div>
-                    <div id="branch_dot" class="branch_dot" onclick="rw()">
-                        <p class="branch_dot_text">RW reports</p>
+                    <div id="branch_dot_3" class="branch_dot_inactive">
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop3_stop1()">
+                            <p class="branch_dot_text">In vivo</p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop3_stop2()">
+                            <p class="branch_dot_text">In vitro</p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop3_stop3()">
+                            <p class="branch_dot_text">Evaluation of RWE</p>
+                        </div>
                     </div>
-            </div>
 
-            </div>
-            <!-- END STOP 3 (DRUG ID) -->
-
-            <!-- START STOP 4 (VALIDATION) -->
-            <div class = "main_stop_validation main_stop">
-
-            <div id="main_dot_validation" class="main_dot" onclick="validation()">
-                <div id="branch_line_validation" class="branch_line_inactive">
                 </div>
-                <p class="main_dot_text">Validation</p>
-            </div>
-            <div id="branch_dot_validation" class="branch_dot_inactive">
-                <div id="branch_dot" class="branch_dot" onclick="in_vivo()">
-                    <p class="branch_dot_text">In vivo</p>
-                </div>
-                <div id="branch_dot" class="branch_dot" onclick="in_vitro()">
-                    <p class="branch_dot_text">In vitro</p>
-                </div>
-                <div id="branch_dot" class="branch_dot" onclick="rwe_evaluation()">
-                    <p class="branch_dot_text">RWE evaluation</p>
-                </div>
-</div>
+                <!-- END STOP 3 -->
 
-            </div>
-            <!-- END STOP 4 (VALIDATION) -->
+                <!-- START STOP 4-->
+                <div class="main_stop_4 main_stop">
+                    <div id="main_dot_4" class="main_dot" onclick="mainstop4()">
+                        <div id="branch_line_4" class="branch_line_inactive">
+                        </div>
+                        <p class="main_dot_text">Drug Clinical Use</p>
+                    </div>
+                    <div id="branch_dot_4" class="branch_dot_inactive">
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop4_stop1()">
+                            <p class="branch_dot_text">Clinical trial</p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop4_stop2()">
+                            <p class="branch_dot_text">Off label use</p>
+                        </div>
+                    </div>
 
-            <!-- START STOP 5 (CLINICAL USE) -->
-            <div class = "main_stop_clinical main_stop">
-
-            <div id="main_dot_clinical" class="main_dot" onclick="clinical()">
-                <div id="branch_line_clinical" class="branch_line_inactive" >
                 </div>
-                <p class="main_dot_text">Clinical use</p>
-            </div>
-            <div id="branch_dot_clinical" class="branch_dot_inactive">
-            <div id="branch_dot" class="branch_dot" onclick="clinical_trial()">
-                <p class="branch_dot_text">Clinical trial</p>
-            </div>
-            <div id="branch_dot" class="branch_dot" onclick="off_label_use()">
-                <p class="branch_dot_text">Off-label use</p>
+                <!-- END STOP 4-->
+
+                <!-- START STOP 5-->
+                <div class="main_stop_5 main_stop">
+                    <div id="main_dot_5" class="main_dot" onclick="mainstop5()">
+                        <div id="branch_line_5" class="branch_line_inactive">
+                        </div>
+                        <p class="main_dot_text">Outcome</p>
+                    </div>
+                    <div id="branch_dot_5" class="branch_dot_inactive">
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop1()">
+                            <p class="branch_dot_text">Approvals</p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop2()">
+                            <p class="branch_dot_text">Alternatives</p>
+                        </div>
+                        <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop3()">
+                            <p class="branch_dot_text">Abandoned</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END STOP 5-->
             </div>
         </div>
-
+        <!-- END MAIN SUBWAY LINE -->
     </div>
-            <!-- END STOP 5 (CLINICAL USE) -->
-
-            <!-- START STOP 6 (OUTCOME) -->
-            <div class = "main_stop_outcome main_stop">
-                <div id="main_dot_outcome" class="main_dot" onclick="outcome()">
-                    <div id="branch_line_outcome" class="branch_line_inactive">
-                    </div>
-                    <p class="main_dot_text">Outcome</p>
-                </div>
-              <div id="branch_dot_outcome" class="branch_dot_inactive">
-                    <div id="branch_dot" class="branch_dot" onclick="approvals()">
-                        <p class="branch_dot_text">Approvals</p>
-                    </div>
-                    <div id="branch_dot" class="branch_dot" onclick="alternatives()">
-                        <p class="branch_dot_text">Alternatives</p>
-                    </div>
-                    <div id="branch_dot" class="branch_dot" onclick="abandoned()">
-                        <p class="branch_dot_text">Abandoned</p>
-                    </div>
-                    
-              </div>
-
-            </div>
-            <!-- END STOP 6 (OUTCOME) -->
-        </div>
-
-    </div>
-    <!-- END MAIN SUBWAY LINE -->
 </div>
 
 
-</div>
+<!-- BRANCH STOPS -->
 
 <div class="split right">
-    <div id="home" class="">
-        {% include /content/main/home.html %}
-    </div>
 
-    <div id="prep" style="display: none;">
-        {% include /content/main/prep.html %}
-    </div>
+    <!-- main stops -->
+    <div id="mainstop1" class="">{% include /content/mainstops/mainstop1.html %}</div>
+    <div id="mainstop2" style="display: none;"> {% include /content/mainstops/mainstop2.html %}</div>
+    <div id="mainstop3" style="display: none;">{% include /content/mainstops/mainstop3.html %}</div>
+    <div id="mainstop4" style="display: none;">{% include /content/mainstops/mainstop4.html %}</div>
+    <div id="mainstop5" style="display: none;">{% include /content/mainstops/mainstop5.html %}</div>
 
-    <div id="drugid" style="display: none;">
-        {% include /content/main/drugid.html %}
-    </div>
+    <!-- branch 1  -->
+    <!-- none here for now -->
 
-    <div id="validation" style="display: none;">
-        {% include /content/main/validation.html %}
-    </div>
+    <!-- branch 2  -->
+    <div id="mainstop2_stop1" style="display: none;">{% include /content/mainstop2/stop1.html %}</div>
+    <div id="mainstop2_stop2" style="display: none;">{% include /content/mainstop2/stop2.html %}</div>
+    <div id="mainstop2_stop3" style="display: none;">{% include /content/mainstop2/stop3.html %}</div>
+    <div id="mainstop2_stop4" style="display: none;">{% include /content/mainstop2/stop4.html %}</div>
+    <div id="mainstop2_stop5" style="display: none;">{% include /content/mainstop2/stop5.html %}</div>
 
-    <div id="clinical" style="display: none;">
-        {% include /content/main/clinical.html %}
-    </div>
+    <!-- branch 3 -->
+    <div id="mainstop3_stop1" style="display: none;">{% include /content/mainstop3/stop1.html %}</div>
+    <div id="mainstop3_stop2" style="display: none;">{% include /content/mainstop3/stop2.html %}</div>
+    <div id="mainstop3_stop3" style="display: none;">{% include /content/mainstop3/stop3.html %}</div>
 
-    <div id="outcome" style="display: none;">
-        {% include /content/main/outcome.html %}
-    </div>
+    <!-- branch 4 -->
+    <div id="mainstop4_stop1" style="display: none;">{% include /content/mainstop4/stop1.html %}</div>
+    <div id="mainstop4_stop2" style="display: none;">{% include /content/mainstop4/stop2.html %}</div>
 
-    <div id="about" style="display: none;">
-        {% include /content/home/about.html %}
-    </div>
-
-    <div id="biobank" style="display: none;">
-        {% include /content/prep/biobank.html %}
-    </div>
-
-    <div id="registries" style="display: none;">
-        {% include /content/prep/registries.html %}
-    </div>
-
-    <div id="research" style="display: none;">
-        {% include /content/prep/research.html %}
-    </div>
-
-
-    <div id="drug_screens" style="display: none;">
-        {% include /content/drugid/drug_screens.html %}
-    </div>
-
-    <div id="biology_first" style="display: none;">
-        {% include /content/drugid/biology_first.html %}
-    </div>
-
-    <div id="drug_use_data" style="display: none;">
-        {% include /content/drugid/drug_use_data.html %}
-    </div>
-
-    <div id="computational" style="display: none;">
-        {% include /content/drugid/computational.html %}
-    </div>
-
-    <div id="rw" style="display: none;">
-        {% include /content/drugid/rw.html %}
-    </div>
-
-    <div id="in_vitro" style="display: none;">
-        {% include /content/validation/in_vitro.html %}
-    </div>
-    <div id="in_vivo" style="display: none;">
-        {% include /content/validation/in_vivo.html %}
-    </div>
-    <div id="rwe_evaluation" style="display: none;">
-        {% include /content/validation/rwe_evaluation.html %}
-    </div>
-
-    <div id="clinical_trial" style="display: none;">
-        {% include /content/clinical/clinical_trial.html %}
-    </div>
-    <div id="clinical_use" style="display: none;">
-        {% include /content/clinical/clinical_use.html %}
-    </div>
-    <div id="off_label_use" style="display: none;">
-        {% include /content/clinical/off_label_use.html %}
-    </div>
-    <div id="abandoned" style="display: none;">
-        {% include /content/outcome/abandoned.html %}
-    </div>
-    <div id="alternatives" style="display: none;">
-        {% include /content/outcome/alternatives.html %}
-    </div>
-    <div id="approvals" style="display: none;">
-        {% include /content/outcome/approvals.html %}
-    </div>
-
+    <!-- branch 5 -->
+    <div id="mainstop5_stop1" style="display: none;">{% include /content/mainstop5/stop1.html %}</div>
+    <div id="mainstop5_stop2" style="display: none;">{% include /content/mainstop5/stop2.html %}</div>
+    <div id="mainstop5_stop3" style="display: none;">{% include /content/mainstop5/stop3.html %}</div>
 
 </div>
 
@@ -290,5 +195,4 @@ permalink: "/roadmap.html"
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
 
 {% include /TOOL/scripts/display_panels.html %}
-
 {% include /TOOL/scripts/subway_interaction.html %}
