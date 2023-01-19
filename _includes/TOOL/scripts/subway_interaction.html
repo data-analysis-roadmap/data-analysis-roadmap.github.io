@@ -23,11 +23,14 @@
             $('#pill_container').removeClass('animate_2 animate_3 animate_4 animate_5 animate_outcome');
             $('#pill_container').addClass('animate_1');
 
+            
             $('#branch_line_2, #branch_line_3, #branch_line_4, #branch_line_5, #branch_line_outcome').removeClass('branch_line_active');
             $('#branch_line_2, #branch_line_3, #branch_line_4, #branch_line_5, #branch_line_outcome').addClass('branch_line_inactive');
 
             $('#branch_dot_2, #branch_dot_3, #branch_dot_4, #branch_dot_5, #branch_dot_outcome').removeClass('branch_dot_active');
             $('#branch_dot_2, #branch_dot_3, #branch_dot_4, #branch_dot_5, #branch_dot_outcome').addClass('branch_dot_inactive');
+
+
         }
         $('#main_dot_1').click(expandBranch);
 
@@ -57,6 +60,8 @@
 
             $('#branch_dot_1, #branch_dot_3, #branch_dot_4, #branch_dot_5, #branch_dot_outcome').removeClass('branch_dot_active');
             $('#branch_dot_1, #branch_dot_3, #branch_dot_4, #branch_dot_5, #branch_dot_outcome').addClass('branch_dot_inactive');
+
+
         }
         $('#main_dot_2').click(expandBranch);
 

@@ -1,0 +1,106 @@
+<button type="button" class="open-overlay">Click to learn more about the ROADMAP tool</button>
+
+<section class="overlay" aria-hidden="false">
+  <div>
+   
+   <div class = "container">
+      <span class = "buttondiv" >
+         <button type="button" class="close-overlay">Close</button>
+      </span>
+   
+      
+    <h1 >Welcome to the ROADMAP tool!</h1>
+    <p class = "">We encourage you to read the sections below before you begin using the tool. <b>You can access the tool at any point by closing this window.</b></p>
+
+    <hr class = "my-5">
+<!-- Tabs navs -->
+<ul style = "width: 100% !important;" class="nav nav-tabs mb-3" id="ex1" role="tablist">
+   <li class="nav-item" role="presentation">
+     <a
+       class="nav-link active"
+       id="ex1-tab-1"
+       data-mdb-toggle="tab"
+       href="#ex1-tabs-1"
+       role="tab"
+       aria-controls="ex1-tabs-1"
+       aria-selected="true"
+       >ROADMAP Overview</a
+     >
+   </li>
+   <li class="nav-item" role="presentation">
+     <a
+       class="nav-link"
+       id="ex1-tab-2"
+       data-mdb-toggle="tab"
+       href="#ex1-tabs-2"
+       role="tab"
+       aria-controls="ex1-tabs-2"
+       aria-selected="false"
+       > Organizational Support Options       </a
+     >
+   </li>
+   <li class="nav-item" role="presentation">
+     <a
+       class="nav-link"
+       id="ex1-tab-3"
+       data-mdb-toggle="tab"
+       href="#ex1-tabs-3"
+       role="tab"
+       aria-controls="ex1-tabs-3"
+       aria-selected="false"
+       >Roadblocks & Advice</a
+     >
+   </li>
+ </ul>
+ <!-- Tabs navs -->
+ 
+ <!-- Tabs content -->
+ <div class="tab-content p-0 m-0" style = "background-color: transparent !important;" id="ex1-content">
+   <div
+     class="tab-pane fade show active"
+     id="ex1-tabs-1"
+     role="tabpanel"
+     aria-labelledby="ex1-tab-1"
+   >
+   {%include TOOL/content/overlayer/roadmap_overview.html%}
+  </div>
+   <div   class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+    {%include TOOL/content/overlayer/org_support.html%}
+  </div>
+   <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+    {%include TOOL/content/overlayer/roadblocks_advice.html%}
+  </div>
+ </div>
+ <!-- Tabs content -->      
+<br><br>
+    <button type="button" class="close-overlay">Close</button>
+  </div></div>
+</section>
+
+<script>
+        var body = document.body,
+        overlay = document.querySelector('.overlay'),
+        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
+        
+    [].forEach.call(overlayBtts, function(btt) {
+
+      btt.addEventListener('click', function() { 
+         
+         /* Detect the button class name */
+         var overlayOpen = this.className === 'open-overlay';
+         
+         /* Toggle the aria-hidden state on the overlay and the 
+            no-scroll class on the body */
+         overlay.setAttribute('aria-hidden', !overlayOpen);
+         body.classList.toggle('noscroll', overlayOpen);
+         
+         /* On some mobile browser when the overlay was previously
+            opened and scrolled, if you open it again it doesn't 
+            reset its scrollTop property */
+         overlay.scrollTop = 0;
+
+      }, false);
+
+    });
+
+</script>

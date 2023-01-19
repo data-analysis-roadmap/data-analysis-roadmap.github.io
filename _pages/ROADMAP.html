@@ -22,12 +22,14 @@ rel="stylesheet"
 
 {% include navbar.html %}
 
+{% include /TOOL/mobile-warning.html %}
+
 
 <div style="position: relative; z-index: 100000 !important;">
-    <h4 id="heading_2" class="main_heading p-1 px-5 shadow-5-strong">Identification</h4>
-    <h4 id="heading_3" class="main_heading p-1 px-5 shadow-5-strong">Validation</h4>
-    <h4 id="heading_4" class="main_heading p-1 px-5 shadow-5-strong">Clinical Use</h4>
-    <h4 id="heading_5" class="main_heading p-1 px-5 shadow-5-strong">Outcomes</h4>
+    <h4 id="heading_2" class="main_heading p-2 px-5 shadow-3-strong">Identification</h4>
+    <h4 id="heading_3" class="main_heading p-2 px-5 shadow-3-strong">Validation</h4>
+    <h4 id="heading_4" class="main_heading p-2 px-5 shadow-3-strong">Clinical Use</h4>
+    <h4 id="heading_5" class="main_heading p-2 px-5 shadow-3-strong">Outcomes</h4>
 </div>
 
 <div class="split left " scroll="no" style="overflow: hidden">
@@ -41,14 +43,14 @@ rel="stylesheet"
                 <!-- START PILL -->
                 <div id="pill_container">
                     <div id="main_pill"><img id="main_pill_img"
-                            src="https://img.icons8.com/stickers/344/prescription-pill-bottle.png"></div>
+                            src="{{site.baseurl}}/assets/svg/icons8/tutti-red-blue-pill.png"></div>
                 </div>
                 <!-- END PILL -->
 
 
                 <!-- START STOP 1 (HOME) -->
                 <div class="main_stop_1 main_stop">
-                    <div id="main_dot_1" class="main_dot" onclick="mainstop1()">
+                    <div id="main_dot_1" class="main_dot hideThis" onclick="mainstop1()">
                     </div>
                     <p class="main_dot_text">Home</p>
 
@@ -139,7 +141,7 @@ rel="stylesheet"
                         <div id="branch_line_5" class="branch_line_inactive">
                         </div>
                     </div>
-                    <p class="main_dot_text">Outcome</p>
+                    <p class="main_dot_text">Outcomes</p>
 
                     <div id="branch_dot_5" class="branch_dot_inactive">
                         <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop1()">

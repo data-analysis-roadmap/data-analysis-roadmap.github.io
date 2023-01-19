@@ -1,3 +1,23 @@
+
+:root {
+    --roadmap_dark: #363443;
+    --roadmap_light: #fff;
+    --accent1: #2E3093;
+    --accent2: #7AACDD;
+    --accent3: #F04E3E;
+    --accent4: #F9C20A;
+  }
+
+
+  .nav-tabs {
+    width: 30vw !important;
+  }
+.overlay {
+}
+
+body {
+    background-color: #fafafa !important;
+}
 /* GENERAL: fonts/headings */
 .fontWeightBold {
     font-weight: 800 !important;
@@ -15,7 +35,7 @@ h2 {
 body,
 .groovepaper {
     background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/groovepaper.png");
+    background-image: url("https://www.transparenttextures.com/patterns/noisy-grid.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -43,6 +63,14 @@ body,
 }
 
 /* SUBWAY: MAIN: create main line*/
+/* using media rules to set up main line/stops to fit a few different screen sizes */
+
+
+.warning {
+    display: none;
+}
+
+
 .main_line {
     height: 100vh;
     width: 25px;
@@ -57,75 +85,11 @@ body,
 }
 
 
-/* SUBWAY: MAIN: space out the main stops evenly*/
-.main_stop {
-    height: 100px;
-    margin-top: 80px;
-    padding-top: 50px;
-}
-
-/* SUBWAY: MAIN: create "dots" for each of the main stops*/
-.main_dot {
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    background-color: aliceblue;
-    border: 1px solid black;
-    position: absolute;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-    z-index: 1 !important;
-}
-
-/* SUBWAY: MAIN: add the name of each main stop*/
-.main_dot_text, .main_dot_text p, .main_dot_text span{
-    text-transform: uppercase;
-    text-align: center !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin-left: -150px;
-    height: 100px;
-    position: relative;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    float: center;
-    color: black;
-}
-
-#line_progress {
-    background-color: #989898;
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-    height: 110px;
-    transition: .6s linear;
-}
-
-#line_progress.progress_1 {
-    height: 150px;
-}
-
-#line_progress.progress_2 {
-    height: 320px;
-}
-
-#line_progress.progress_3 {
-    height: 480px;
-}
-
-#line_progress.progress_4 {
-    height: 680px;
-}
-
-#line_progress.progress_5 {
-    height: 850px;
-}
-
-
 #pill_container {
     display: block;
     position: absolute;
     top: 30px;
-    left: 50%;
-    margin-left: -17px;
+    margin-left: -10px;
     z-index: 200;
     transition: top 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-transition: top 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -138,7 +102,7 @@ body,
     display: block;
     position: relative;
     margin-top: -45px;
-    margin-left: -10px;
+    margin-left: -8px;
     background-size: contain;
     background-position: center;
     transition: top 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -153,8 +117,9 @@ body,
 #main_pill_img {
     display: block;
     position: relative;
-    width: 60px;
+    width: auto;
     height: 60px;
+    margin-left: 7px;
     -webkit-transform-origin: 50% 10px;
     -moz-transform-origin: 50% 10px;
     -ms-transform-origin: 50% 10px;
@@ -169,27 +134,227 @@ body,
 }
 
 
-#pill_container,
-#pill_container.animate_1 {
-    top: 150px;
 
+/* START MEDIA RULES */
+
+/* MEDIA RULES: show warning (+ hide everything else) on screens that are shorter than 650px */
+@media screen and (min-height: 1px) and (max-height: 650px) {
+
+    .main_line,
+    .main_stop,
+    .main_dot,
+    #main_pill,
+    .overlay,
+    .main_stop_1,
+    .intro,
+    #mainstop1,
+    #mainstop2,
+    #mainstop3,
+    #mainstop4,
+    #mainstop5,
+    #mainstop2_stop1,
+    #mainstop2_stop2,
+    #mainstop2_stop3,
+    #mainstop2_stop4,
+    #mainstop2_stop5,
+    #mainstop3_stop1,
+    #mainstop3_stop2,
+    #mainstop3_stop3,
+    #mainstop4_stop1,
+    #mainstop4_stop2,
+    #mainstop5_stop1,
+    #mainstop5_stop2,
+    #mainstop5_stop3,
+    #mainstop5_stop4,
+    #mainstop5_stop5,
+    #branch_line_2,
+    #branch_line_3,
+    #branch_line_4,
+    #branch_line_5,
+    #heading_2,
+    #heading_3,
+    #heading_4,
+    #heading_5 {
+        display: none !important;
+    }
+
+    .warning {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-#pill_container.animate_2 {
-    top: 335px;
+/* MEDIA RULES: show warning (+ hide everything else) on screens that are narrower than 650px */
+@media screen and (min-width: 1px) and (max-width: 650px) {
+
+    .main_line,
+    .main_stop,
+    .main_dot,
+    #main_pill,
+    .overlay,
+    .main_stop_1,
+    .intro,
+    #mainstop1,
+    #mainstop2,
+    #mainstop3,
+    #mainstop4,
+    #mainstop5,
+    #mainstop2_stop1,
+    #mainstop2_stop2,
+    #mainstop2_stop3,
+    #mainstop2_stop4,
+    #mainstop2_stop5,
+    #mainstop3_stop1,
+    #mainstop3_stop2,
+    #mainstop3_stop3,
+    #mainstop4_stop1,
+    #mainstop4_stop2,
+    #mainstop5_stop1,
+    #mainstop5_stop2,
+    #mainstop5_stop3,
+    #mainstop5_stop4,
+    #mainstop5_stop5,
+    #branch_line_2,
+    #branch_line_3,
+    #branch_line_4,
+    #branch_line_5,
+    #heading_2,
+    #heading_3,
+    #heading_4,
+    #heading_5 {
+        display: none !important;
+    }
+
+    .warning {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-#pill_container.animate_3 {
-    top: 515px;
+
+.main_stop {
+    height: 100px;
 }
 
-#pill_container.animate_4 {
-    top: 696px;
+/* MEDIA RULES: adjust main line based on height */
+#line_progress.progress_5 {height: 100vh;} /*outcome */
+
+/* smalllest allowable screen size */
+@media screen and (min-height: 651px) and (max-height: 750px) {
+    .main_stop_1 {
+        margin-top: 90px !important;
+    }
+
+    .main_stop {
+        margin-top: 20px;
+
+    }
+    
+    #line_progress.progress_1 {height: 105px;} /* home */
+    #line_progress.progress_2 {height: 225px;} /* identification */
+    #line_progress.progress_3 {height: 335px;} /* validation */
+    #line_progress.progress_4 {height: 465px;} /* clinical use */
+
+    #pill_container,#pill_container.animate_1 {top: 115px;} /* home */
+    #pill_container.animate_2 {top: 235px;} /* identification */
+    #pill_container.animate_3 {top: 355px;} /* validation */
+    #pill_container.animate_4 {top: 475px;} /* clinical use */
+    #pill_container.animate_5 {top: 595px;} /* outcome */
 }
 
-#pill_container.animate_5 {
-    top: 873px;
+
+
+/* medium allowable screen size */
+@media screen and (min-height: 751px) and (max-height: 900px) {
+    .main_stop_1 {
+        margin-top: 90px !important;
+    }
+
+    .main_stop {
+        margin-top: 50px;
+    }
+
+    #line_progress.progress_1 {height: 105px;} /* home */
+    #line_progress.progress_2 {height: 250px;} /* identification */
+    #line_progress.progress_3 {height: 405px;} /* validation */
+    #line_progress.progress_4 {height: 555px;} /* clinical use */
+
+    #pill_container,#pill_container.animate_1 {top: 115px;} /* home */
+    #pill_container.animate_2 {top: 265px;} /* identification */
+    #pill_container.animate_3 {top: 415px;} /* validation */
+    #pill_container.animate_4 {top: 565px;} /* clinical use */
+    #pill_container.animate_5 {top: 715px;} /* outcome */
 }
+
+/* largest allowable screen size */
+@media screen and (min-height: 901px) {
+    .main_stop_1 {
+        margin-top: 100px !important;
+    }
+
+    .main_stop {
+        margin-top: 80px;
+    }
+
+    #line_progress.progress_1 {height: 105px;} /* home */
+    #line_progress.progress_2 {height: 300px;} /* identification */
+    #line_progress.progress_3 {height: 475px;} /* validation */
+    #line_progress.progress_4 {height: 645px;} /* clinical use */
+
+    #pill_container,#pill_container.animate_1 {top: 120px;} /* home */
+    #pill_container.animate_2 {top: 305px;} /* identification */
+    #pill_container.animate_3 {top: 482px;} /* validation */
+    #pill_container.animate_4 {top: 660px;} /* clinical use */
+    #pill_container.animate_5 {top: 843px;} /* outcome */
+}
+
+/* MEDIA RULES: adjust branches based on width */
+
+/* END MEDIA RULES */
+
+/* SUBWAY: MAIN: space out the main stops evenly*/
+
+/* SUBWAY: MAIN: create "dots" for each of the main stops*/
+.main_dot {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    position: absolute;
+    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    z-index: 1 !important;
+}
+
+/* SUBWAY: MAIN: add the name of each main stop*/
+.main_dot_text,
+.main_dot_text p,
+.main_dot_text span {
+    text-transform: uppercase;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: -180px;
+    height: 100px;
+    position: relative;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    float: center;
+    color: var(roadmap_dark);
+}
+
+#line_progress {
+    background-color: #989898;
+    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    height: 105px;
+    transition: .6s linear;
+}
+
+
+
 /* SUBWAY: BRANCHES: add the "dots" for each stop along the branches*/
 .branch_dot_active {
     list-style: none;
@@ -211,6 +376,9 @@ body,
     margin-top: -93px;
 }
 
+.branch_line_inactive {
+    width: 0vw;
+}
 /* SUBWAY: BRANCHES: create the branches that stem out of the main subway line*/
 .branch_line_active {
     height: 14px;
@@ -222,7 +390,7 @@ body,
     width: 40vw;
     justify-content: space-between;
     z-index: 1 !important;
-    transition: width 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: width 0.7s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
 
 /* SUBWAY:  BRANCHES: customize the color of each branch*/
@@ -279,7 +447,6 @@ body,
     opacity: 100%;
     border-radius: 2em;
     font-weight: 700;
-    transition: .8s ease;
     z-index: 1000000 !important;
     margin-right: 3em;
     margin-left: 80px;
@@ -369,3 +536,69 @@ body,
 }
 
 
+
+/* START OVERLAY STYLE */
+
+    /* to the body element */
+    .noscroll { overflow: hidden; }
+
+    .overlay { 
+       position: fixed; 
+       overflow-y: scroll;
+       top: 0; right: 0; bottom: 0; left: 0; }
+    
+    [aria-hidden="true"] { display: none; }
+    [aria-hidden="false"] { display: block; }
+    
+    
+    /* this code is not strictly necessary: just to make this demo a bit pleasant */
+    
+    .overlay div {
+       margin: 3vh auto;
+       width: auto;
+       padding: 40px;
+       min-height: 200vh;
+       background: rgba(255,255,255, .85);
+    }
+    .overlay {
+        background:  rgba(40,40,40, .5  );
+    }
+    
+    * { box-sizing: border-box; }
+    
+    @media only screen and (min-width: 1500px) {
+      .buttondiv {
+       position: absolute; 
+       right: 300px!important;  }
+    }
+    
+    .close-overlay, .open-overlay {
+        background-image: url("https://www.transparenttextures.com/patterns/project-paper.png");
+        box-shadow:  5px 5px 15px #d5d5d5,
+                 -11px -11px 21px #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    color: var(--roadmap_light);
+    background-color: var(--accent2);
+    border: none;
+    transition: .3s;   
+    }
+    
+    .close-overlay:hover, .open-overlay:hover, .close-overlay:active, .open-overlay:active {
+       color: var(--accent1);
+       border: 1px solid var(--accent1);
+    }
+    
+/* END OVERLAY STYLE */
+.main_page_image {
+height: 80vh;
+max-width: 50vw !important;
+object-fit: cover;
+opacity: 7%;
+}
+
+
+.tab-pane {
+    background-color: transparent !important;
+
+}
