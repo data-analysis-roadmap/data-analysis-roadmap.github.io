@@ -3,7 +3,7 @@ title: "ROADMAP tool"
 layout: default
 permalink: "/roadmap.html"
 ---
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link
 href="{{site.baseurl}}/assets/css/tool.css"
 rel="stylesheet"
@@ -17,6 +17,15 @@ rel="stylesheet"
 
     .inactive_panel {
         display: none !important;
+    }
+
+    .location {
+        height: 30px;
+        width: auto;
+        margin-left: -1px;
+        margin-top: -50px;
+        position: absolute;
+        display: none;
     }
 </style>
 
@@ -50,7 +59,7 @@ rel="stylesheet"
 
                 <!-- START STOP 1 (HOME) -->
                 <div class="main_stop_1 main_stop">
-                    <div id="main_dot_1" class="main_dot hideThis" onclick="mainstop1()">
+                    <div id="main_dot_1" tabindex="1"  class="main_dot hideThis" onclick="mainstop1()">
                     </div>
                     <p class="main_dot_text">Home</p>
 
@@ -60,28 +69,35 @@ rel="stylesheet"
 
                 <!-- START STOP 2 -->
                 <div class="main_stop_2 main_stop">
-                    <div id="main_dot_2" class="main_dot" onclick="mainstop2()">
+                    <div id="main_dot_2" tabindex="1"  class="main_dot" onclick="mainstop2()">
                         <div id="branch_line_2" class="branch_line_inactive">
                         </div>
                     </div>
                     <p class="main_dot_text">Identification</p>
 
                     <div id="branch_dot_2" class="branch_dot_inactive">
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop1()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop2_stop1()">
+                            <div class = "">
+                            <img id = "loc2_1" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
+                        </div>
                             <p class="branch_dot_text">Drug screen</p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop2()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop2_stop2()">
+                            <img id = "loc2_2" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Pathogenesis targeting</p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop3()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop2_stop3()">
+                            <img id = "loc2_3" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Data from similar diseases
                             </p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop4()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop2_stop4()">
+                            <img id = "loc2_4" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Computational
                             </p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop2_stop5()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop2_stop5()">
+                            <img id = "loc2_5" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Off-label use
                             </p>
                         </div>
@@ -94,20 +110,23 @@ rel="stylesheet"
                 <!-- START STOP 3-->
                 <div class="main_stop_3 main_stop">
 
-                    <div id="main_dot_3" class="main_dot" onclick="mainstop3()">
+                    <div id="main_dot_3" tabindex="1"  class="main_dot" onclick="mainstop3()">
                         <div id="branch_line_3" class="branch_line_inactive">
                         </div>
                     </div>
                     <p class="main_dot_text">Validation</p>
 
                     <div id="branch_dot_3" class="branch_dot_inactive">
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop3_stop1()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop3_stop1()">
+                            <img id = "loc3_1" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">In vivo</p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop3_stop2()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop3_stop2()">
+                            <img id = "loc3_2" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">In vitro</p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop3_stop3()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop3_stop3()">
+                            <img id = "loc3_3" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Evaluation of RWE</p>
                         </div>
                     </div>
@@ -117,17 +136,19 @@ rel="stylesheet"
 
                 <!-- START STOP 4-->
                 <div class="main_stop_4 main_stop">
-                    <div id="main_dot_4" class="main_dot" onclick="mainstop4()">
+                    <div id="main_dot_4" tabindex="1"  class="main_dot" onclick="mainstop4()">
                         <div id="branch_line_4" class="branch_line_inactive">
                         </div>
                     </div>
                     <p class="main_dot_text">Clinical Use</p>
 
                     <div id="branch_dot_4" class="branch_dot_inactive">
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop4_stop1()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop4_stop1()">
+                            <img id = "loc4_1" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Clinical trial</p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop4_stop2()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop4_stop2()">
+                            <img id = "loc4_2" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Off label use</p>
                         </div>
                     </div>
@@ -137,20 +158,23 @@ rel="stylesheet"
 
                 <!-- START STOP 5-->
                 <div class="main_stop_5 main_stop">
-                    <div id="main_dot_5" class="main_dot" onclick="mainstop5()">
+                    <div id="main_dot_5" tabindex="1"  class="main_dot" onclick="mainstop5()">
                         <div id="branch_line_5" class="branch_line_inactive">
                         </div>
                     </div>
                     <p class="main_dot_text">Outcomes</p>
 
                     <div id="branch_dot_5" class="branch_dot_inactive">
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop1()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop5_stop1()">
+                            <img id = "loc5_1" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Approvals</p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop2()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop5_stop2()">
+                            <img id = "loc5_2" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Alternatives</p>
                         </div>
-                        <div id="branch_dot" class="branch_dot" onclick="mainstop5_stop3()">
+                        <div id="branch_dot"  tabindex="1" class="branch_dot" onclick="mainstop5_stop3()">
+                            <img id = "loc5_3" class = "location animate__animated animate__slideInUp" src = "{{site.baseurl}}/assets/svg/icons8/inky-gps.png">
                             <p class="branch_dot_text">Abandoned</p>
                         </div>
                     </div>
@@ -207,3 +231,15 @@ rel="stylesheet"
 
 {% include /TOOL/scripts/display_panels.html %}
 {% include /TOOL/scripts/subway_interaction.html %}
+
+<script>
+
+document.getElementsByClassName("branch_dot").onclick = function() {
+   //do stuff...
+   if (elem) {
+        elem.className = "";
+      }
+      button.className = "button-selected";
+};
+
+</script>

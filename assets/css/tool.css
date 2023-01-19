@@ -174,7 +174,8 @@ body,
     #heading_2,
     #heading_3,
     #heading_4,
-    #heading_5 {
+    #heading_5,
+    .location {
         display: none !important;
     }
 
@@ -457,7 +458,7 @@ body,
 
 /* SUBWAY:  BRANCHES: change color on hover*/
 .main_dot:hover,
-.branch_dot:hover {
+.branch_dot:hover, .main_dot:focus, .branch_dot:focus {
     background: black;
     background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
 }
