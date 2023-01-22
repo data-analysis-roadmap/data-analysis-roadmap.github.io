@@ -1,116 +1,71 @@
-<div class="container z-depth-1 my-5 pt-5 pb-3 px-5">
+<div class="container z-depth-1 my-4 pt-4 pb-2 px-4">
 
-  <!-- Section -->
-  <section>
-    
-    <style>
-      .fa-play:before {
-        margin-left: .3rem;
-      }
+  <h1 class = "mb-5">Drug screen</h1>
 
-      /* Steps */
-      .step {
-        list-style: none;
-        margin: 0;
-      }
+    <p>
+      High-throughput drug screening (HTDS) is a method of rapidly screening anywhere from 100,000 to 1,000,0000 of compounds from existing libraries to identify those that have a specific biological activity at the model organism, cellular, pathway, or molecular level. This process is used in early stages of drug discovery to identify potential drug candidates and in drug repurposing to identify new potential uses for existing drugs. The goal of HTDS is to identify active compounds from a library of potential candidates as quickly and efficiently as possible.  Compounds that affect the target in an anticipated way are called hits, and the screens may be restricted to compounds that have already been tested in humans, thereby reducing the need for extensive preclinical tests. These hit compounds become candidates for the starting point for the development of drugs. A HTDS can produce a huge number of hits which are then further optimized and validated to remove any artifacts or ‘noise’ from the screen through further validation testing. The validated hits are studied reducing the number of compounds which then are entered into a lead optimization step to yield a drug candidate to study in clinical trials.
 
-      .step-element {
-        display: flex;
-        padding: 1rem 0;
-      }
+    </p>
 
-      .step-number {
-        position: relative;
-        width: 7rem;
-        flex-shrink: 0;
-        text-align: center;
-      }
+    <p>One important aspect of HTDS that is important to consider is that it can be quite expensive, as it requires access to a highly specialized screening facility and compound libraries which many labs may not be able to afford, though there are third-party providers like Contract Research Organizations (CRO) or core facilities which may reduces costs for nonprofits. 
+    </p>
 
-      .step-number .number {
-        color: #bfc5ca;
-        background-color: #eaeff4;
-        font-size: 1.5rem;
-      }
+    <p class = "mb-5">It is also important to consider alternatives to HTDS, such as</p>
 
-      .step-number .number {
-        width: 48px;
-        height: 48px;
-        line-height: 48px;
-      }
-
-      .number {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 38px;
-        border-radius: 10rem;
-      }
-
-      .step-number::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 48px;
-        bottom: -2rem;
-        margin-left: -1px;
-        border-left: 2px dashed #eaeff4;
-      }
-
-      .step .step-element:last-child .step-number::before {
-        bottom: 1rem;
-      }
-    </style>
-
-
-    <h3 class="font-weight-bold text-center dark-grey-text pb-2">Drug screen</h3>
-    <hr class="w-header my-4">
-    <p class="lead text-center text-muted pt-2 mb-5">Explore the best MDB template in the market in a short 1-minute video.</p>
-
-    <div class="row align-items-center">
-
-      <div class="col-lg-6 mb-4">
-        <div class="view z-depth-1-half rounded">
-          <img class="rounded img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="Video title">
-        </div>
+    <div class = "row d-flex mb-5">
+      <div class = "col-4">
+        <p><b>Fragment-based Screening</b></p>
+        <p>uses low-throughput techniques. Quality of hits is generally higher than HTDS. FBS is widely used in drug discovery programs.
+        </p>
       </div>
-
-      <div class="col-lg-6 mb-4">
-
-        <ol class="step pl-0">
-          <li class="step-element pb-0">
-            <div class="step-number">
-              <span class="number">1</span>
-            </div>
-            <div class="step-excerpt">
-              <h6 class="font-weight-bold dark-grey-text mb-3">Write your requirements</h6>
-              <p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
-            </div>
-          </li>
-          <li class="step-element pb-0">
-            <div class="step-number">
-              <span class="number">2</span>
-            </div>
-            <div class="step-excerpt">
-              <h6 class="font-weight-bold dark-grey-text mb-3">Sign the contract</h6>
-              <p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
-            </div>
-          </li>
-          <li class="step-element pb-0">
-            <div class="step-number">
-              <span class="number">3</span>
-            </div>
-            <div class="step-excerpt">
-              <h6 class="font-weight-bold dark-grey-text mb-3">We start developing</h6>
-              <p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
-            </div>
-          </li>
-        </ol>
-
+      <div class = "col-4">
+        <p><b>In silico screening</b></p>
+        <p>uses structure and ligand-based approaches to virtually screen large collections of compounds
+        </p>
       </div>
+      <div class = "col-4">
+        <p><b>High-Content screening</b></p>
+        <p> “content screening in cell-based systems uses living cells as tools in biological research to elucidate the workings of normal and diseased cells. HCS is also used to discover and optimize new drug candidates.”
+        </p>
+      </div>
+      <div class = "col-4">
+        <p><b>Rational Drug Design</b></p>
+        <p> “biological and physical properties of the target are studied, and a prediction is made of the sorts of chemicals that might fit into an active site.”
+        </p>
+      </div>
+      <div class = "col-4">
+        <p><b>Computer-Assisted Drug Design</b></p>
+        <p>“uses computational chemistry to discover, enhance, or study drugs and related biologically active molecules”
+        </p>
+      </div>   
+    </div>   
 
+<h3>Resources</h3>
+
+<ul class="list-group list-group-light">
+  <li class="transparent list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
     </div>
-    
-  </section>
-  <!-- Section -->
+  </li>
+  <li class="transparent list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+  </li>
+  <li class="transparent list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+  </li>
+</ul>
+
+
 
 </div>
+
+<div class = "py-5"></div>
+<div class = "py-5"></div><div class = "py-5"></div>
