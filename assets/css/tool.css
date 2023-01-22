@@ -138,33 +138,26 @@ h2 {
 }
 
 
-.first-r  { left: 0%; position: relative; }
-.second-r { left: 20%; position: relative; }
-.third-r  { left: 40%; position: relative; }
-.fourth-r  { left: 60%; position: relative; }
-
-
 .warning {
     display: none;
 }
 
 .nav-tabs .nav-item .nav-link {
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 1px dotted black;
+    border-top: 1px dotted black;
     font-size: .9em;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 60vw;
   }
 
   .nav-item .overlay_link:hover {
     background-color: var(--accent4);
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    background-image: url("https://www.transparenttextures.com/patterns/project-paper.png");
   }
   
   .nav-tabs .nav-item .nav-link.active {
-    background-color: var(--accent2);
-    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    background-image: url("https://www.transparenttextures.com/patterns/project-paper.png");
     color: var(--roadmap_dark);
     font-weight: 800;
   }
