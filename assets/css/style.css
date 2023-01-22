@@ -10,7 +10,47 @@
     --accent3: #F04E3E;
     --accent4: #F9C20A;
   }
+  .close-overlay {
+    width: 100px;
+  }
 
+  /* START NAVBAR */
+  @media screen and (max-width: 65em) {
+    .nav1 {
+      display: none;
+    }
+
+    .nav2 {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 66em) {
+    .nav1 {
+      display: block;
+    }
+
+    .nav2 {
+      display: none;
+    }
+  }
+
+  .navbar {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 45px;
+
+  }
+
+  .dropdown {
+    margin-top: -5px;
+    padding-left: 30px;
+  }
+
+  /* END NAVBAR */
   figcaption {
     font-size: 11px;
     margin-top: 0px;

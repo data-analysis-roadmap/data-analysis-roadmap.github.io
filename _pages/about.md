@@ -1,10 +1,11 @@
 ---
 title: "About the ROADMAP project"
-layout: markdown_pages
+layout: markdown
 permalink: "/about.html"
 ---
 
 
+<div class = "pt-5"></div>
 
 # About the ROADMAP project
 

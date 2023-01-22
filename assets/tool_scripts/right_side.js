@@ -1,0 +1,1239 @@
+
+    function mainstop1() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "block";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+    function mainstop2() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "block";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+    function mainstop3() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "block";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop4() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "block";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop5() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "block";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop2_stop1() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "block";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "block";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop2_stop2() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "block";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "block";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop2_stop3() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "block";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "block";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop2_stop4() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "block";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "block";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop2_stop5() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "block";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "block";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop3_stop1() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "block";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "block";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop3_stop2() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "block";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "block";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop3_stop3() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "block";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "block";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop4_stop1() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "block";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "block";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop4_stop2() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "block";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "block";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop5_stop1() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "block";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "block";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop5_stop2() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "block";
+        mainstop5_stop3.style.display = "none";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "block";
+        loc5_3.style.display = "none";
+
+    }
+
+
+    function mainstop5_stop3() {
+
+        var mainstop1 = document.getElementById("mainstop1");
+        var mainstop2 = document.getElementById("mainstop2");
+        var mainstop3 = document.getElementById("mainstop3");
+        var mainstop4 = document.getElementById("mainstop4");
+        var mainstop5 = document.getElementById("mainstop5");
+        var mainstop2_stop1 = document.getElementById("mainstop2_stop1");
+        var mainstop2_stop2 = document.getElementById("mainstop2_stop2");
+        var mainstop2_stop3 = document.getElementById("mainstop2_stop3");
+        var mainstop2_stop4 = document.getElementById("mainstop2_stop4");
+        var mainstop2_stop5 = document.getElementById("mainstop2_stop5");
+        var mainstop3_stop1 = document.getElementById("mainstop3_stop1");
+        var mainstop3_stop2 = document.getElementById("mainstop3_stop2");
+        var mainstop3_stop3 = document.getElementById("mainstop3_stop3");
+        var mainstop4_stop1 = document.getElementById("mainstop4_stop1");
+        var mainstop4_stop2 = document.getElementById("mainstop4_stop2");
+        var mainstop5_stop1 = document.getElementById("mainstop5_stop1");
+        var mainstop5_stop2 = document.getElementById("mainstop5_stop2");
+        var mainstop5_stop3 = document.getElementById("mainstop5_stop3");
+        var loc2_1 = document.getElementById("loc2_1");
+        var loc2_2 = document.getElementById("loc2_2");
+        var loc2_3 = document.getElementById("loc2_3");
+        var loc2_4 = document.getElementById("loc2_4");
+        var loc2_5 = document.getElementById("loc2_5");
+        var loc3_1 = document.getElementById("loc3_1");
+        var loc3_2 = document.getElementById("loc3_2");
+        var loc3_3 = document.getElementById("loc3_3");
+        var loc4_1 = document.getElementById("loc4_1");
+        var loc4_2 = document.getElementById("loc4_2");
+        var loc5_1 = document.getElementById("loc5_1");
+        var loc5_2 = document.getElementById("loc5_2");
+        var loc5_3 = document.getElementById("loc5_3");
+
+        mainstop1.style.display = "none";
+        mainstop2.style.display = "none";
+        mainstop3.style.display = "none";
+        mainstop4.style.display = "none";
+        mainstop5.style.display = "none";
+        mainstop2_stop1.style.display = "none";
+        mainstop2_stop2.style.display = "none";
+        mainstop2_stop3.style.display = "none";
+        mainstop2_stop4.style.display = "none";
+        mainstop2_stop5.style.display = "none";
+        mainstop3_stop1.style.display = "none";
+        mainstop3_stop2.style.display = "none";
+        mainstop3_stop3.style.display = "none";
+        mainstop4_stop1.style.display = "none";
+        mainstop4_stop2.style.display = "none";
+        mainstop5_stop1.style.display = "none";
+        mainstop5_stop2.style.display = "none";
+        mainstop5_stop3.style.display = "block";
+        loc2_1.style.display = "none";
+        loc2_2.style.display = "none";
+        loc2_3.style.display = "none";
+        loc2_4.style.display = "none";
+        loc2_5.style.display = "none";
+        loc3_1.style.display = "none";
+        loc3_2.style.display = "none";
+        loc3_3.style.display = "none";
+        loc4_1.style.display = "none";
+        loc4_2.style.display = "none";
+        loc5_1.style.display = "none";
+        loc5_2.style.display = "none";
+        loc5_3.style.display = "block";
+
+    }
